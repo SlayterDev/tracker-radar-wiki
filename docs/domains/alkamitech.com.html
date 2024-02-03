@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - alkamitech.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "alkamitech.com",
+        history: [{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/alkamitech.com.ico' width="32" height="32" class='inline-block' /> alkamitech.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;15047<small>/24273</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/alkamitech.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>assets.orb</span>, 
+                    <span>iris</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Top Initiators</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <p>loaded directly - 100.00% of loads</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;yui-reset.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;yui-reset.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;vendor&#x2F;jquery&#x2F;jquery-ui.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;vendor&#x2F;jquery&#x2F;jquery-ui.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;vendor&#x2F;jquery&#x2F;jquery.daterangepicker.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;vendor&#x2F;jquery&#x2F;jquery.daterangepicker.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;vendor&#x2F;extjs&#x2F;ext-all.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;vendor&#x2F;extjs&#x2F;ext-all.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;base.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;base.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;grid.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;grid.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;sidebar.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;sidebar.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;lib&#x2F;iris&#x2F;iris.shim.desktop.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;lib&#x2F;iris&#x2F;iris.shim.desktop.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris&#x2F;2.8.1&#x2F;iris.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris&#x2F;2.8.1&#x2F;iris.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris-foundation&#x2F;1.6.1&#x2F;iris-foundation.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris-foundation&#x2F;1.6.1&#x2F;iris-foundation.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://iris.alkamitech.com&#x2F;cdn&#x2F;iris-vue@official&#x2F;iris-components.shim.desktop.min.css" target="_blank" class="external" rel="noreferrer noopener">iris.alkamitech.com&#x2F;cdn&#x2F;iris-vue@official&#x2F;iris-components.shim.desktop.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://iris.alkamitech.com&#x2F;cdn&#x2F;iris-foundation&#x2F;latest&#x2F;iris-foundation.min.css" target="_blank" class="external" rel="noreferrer noopener">iris.alkamitech.com&#x2F;cdn&#x2F;iris-foundation&#x2F;latest&#x2F;iris-foundation.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://iris.alkamitech.com&#x2F;cdn&#x2F;iris-vue@official&#x2F;iris-components.min.css" target="_blank" class="external" rel="noreferrer noopener">iris.alkamitech.com&#x2F;cdn&#x2F;iris-vue@official&#x2F;iris-components.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;scripts&#x2F;packages&#x2F;webtoolkit&#x2F;localization-ts.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;scripts&#x2F;packages&#x2F;webtoolkit&#x2F;localization-ts.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-polyfills&#x2F;2.1.0&#x2F;polyfill.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-polyfills&#x2F;2.1.0&#x2F;polyfill.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-polyfills&#x2F;2.1.0&#x2F;webcomponentsjs&#x2F;webcomponents-bundle.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-polyfills&#x2F;2.1.0&#x2F;webcomponentsjs&#x2F;webcomponents-bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-polyfills&#x2F;2.1.0&#x2F;webcomponentsjs&#x2F;custom-elements-es5-adapter.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-polyfills&#x2F;2.1.0&#x2F;webcomponentsjs&#x2F;custom-elements-es5-adapter.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris&#x2F;2.8.1&#x2F;popper.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris&#x2F;2.8.1&#x2F;popper.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris&#x2F;2.8.1&#x2F;iris.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-iris&#x2F;2.8.1&#x2F;iris.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-shell&#x2F;1.13.1&#x2F;orb-shell.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-shell&#x2F;1.13.1&#x2F;orb-shell.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;jquery&#x2F;3.7.0&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;jquery&#x2F;3.7.0&#x2F;jquery.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;jquery-ui&#x2F;1.13.2&#x2F;jquery-ui.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;jquery-ui&#x2F;1.13.2&#x2F;jquery-ui.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;jquery-validate&#x2F;1.19.5&#x2F;jquery-validate.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;jquery-validate&#x2F;1.19.5&#x2F;jquery-validate.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;jquery.bundle&#x2F;jquery-validate-sitetext.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;jquery.bundle&#x2F;jquery-validate-sitetext.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;moment&#x2F;2.29.4&#x2F;moment.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;moment&#x2F;2.29.4&#x2F;moment.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;ua-parser&#x2F;1.0.35&#x2F;ua-parser.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;ua-parser&#x2F;1.0.35&#x2F;ua-parser.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;vendor.bundle&#x2F;bootstrap-dropdown.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;vendor.bundle&#x2F;bootstrap-dropdown.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;vendor.bundle&#x2F;bootstrap-modal.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;vendor.bundle&#x2F;bootstrap-modal.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;vendor.bundle&#x2F;bootstrap-select.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;vendor.bundle&#x2F;bootstrap-select.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;jquery.plugins.bundle&#x2F;jquery.filestyle.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;jquery.plugins.bundle&#x2F;jquery.filestyle.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;jquery.plugins.bundle&#x2F;jquery.dateRangePicker.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;jquery.plugins.bundle&#x2F;jquery.dateRangePicker.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;shave&#x2F;2.5.10&#x2F;shave.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;shave&#x2F;2.5.10&#x2F;shave.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;en-US.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;en-US.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;i18n-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;i18n-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;jquery.extensions.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;jquery.extensions.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;utils-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;utils-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;flash-banner-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;flash-banner-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;helpers-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;helpers-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;jquery-helpers-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;jquery-helpers-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;language-toggle-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;language-toggle-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;profile_nav-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;profile_nav-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;idle-timeout-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;idle-timeout-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;idle-modal-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;idle-modal-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;screen-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;screen-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;content-articles-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;content-articles-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;content-promo-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;content-promo-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;system-alert-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;system-alert-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;password-togglefication.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;password-togglefication.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;iris-sitetext.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;iris-sitetext.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;feature-detect-ts.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;vendor.bundles&#x2F;globals.bundle&#x2F;feature-detect-ts.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;vue&#x2F;2.7.14&#x2F;vue.runtime.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;vue&#x2F;2.7.14&#x2F;vue.runtime.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;vuex&#x2F;3.6.2&#x2F;vuex.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;vuex&#x2F;3.6.2&#x2F;vuex.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;vue-router&#x2F;3.6.5&#x2F;vue-router.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;vue-router&#x2F;3.6.5&#x2F;vue-router.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;shared.scripts&#x2F;browser-support-ts.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;javascripts&#x2F;shared.scripts&#x2F;browser-support-ts.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;lottie-web&#x2F;5.12.0&#x2F;lottie_light.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;lottie-web&#x2F;5.12.0&#x2F;lottie_light.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://iris.alkamitech.com&#x2F;cdn&#x2F;iris-vue@official&#x2F;iris-vue.umd.min.js" target="_blank" class="external" rel="noreferrer noopener">iris.alkamitech.com&#x2F;cdn&#x2F;iris-vue@official&#x2F;iris-vue.umd.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;print.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.orb.alkamitech.com&#x2F;cdn&#x2F;alkami-orb-client-global&#x2F;1.6.0&#x2F;stylesheets&#x2F;print.min.css</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://charteroak.org" target="_blank" class="external">charteroak.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://olb.desertfinancial.com" target="_blank" class="external">olb.desertfinancial.com</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

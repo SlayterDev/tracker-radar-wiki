@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - titdam.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "titdam.com",
+        history: [{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/titdam.com.ico' width="32" height="32" class='inline-block' /> titdam.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;14352<small>/24273</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/titdam.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>phimsex</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Top Initiators</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <p><a href="./titdam.com.html">titdam.com</a> - 100.00% of loads</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-includes&#x2F;css&#x2F;dist&#x2F;block-library&#x2F;style.min.css" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-includes&#x2F;css&#x2F;dist&#x2F;block-library&#x2F;style.min.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;plugins&#x2F;wp-pagenavi&#x2F;pagenavi-css.css" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;plugins&#x2F;wp-pagenavi&#x2F;pagenavi-css.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;stylesheets&#x2F;font-awesome&#x2F;css&#x2F;font-awesome.min.css" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;stylesheets&#x2F;font-awesome&#x2F;css&#x2F;font-awesome.min.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;style.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-includes&#x2F;js&#x2F;jquery&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-includes&#x2F;js&#x2F;jquery&#x2F;jquery.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-includes&#x2F;js&#x2F;jquery&#x2F;jquery-migrate.min.js" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-includes&#x2F;js&#x2F;jquery&#x2F;jquery-migrate.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;logotdc.png" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;logotdc.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;img&#x2F;px.gif" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;img&#x2F;px.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;js&#x2F;navigation.js" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;js&#x2F;navigation.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;js&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;js&#x2F;main.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;js&#x2F;skip-link-focus-fix.js" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;js&#x2F;skip-link-focus-fix.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;stylesheets&#x2F;font-awesome&#x2F;fonts&#x2F;fontawesome-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;themes&#x2F;kingtube&#x2F;assets&#x2F;stylesheets&#x2F;font-awesome&#x2F;fonts&#x2F;fontawesome-webfont.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;nhung-ngay-nghi-ben-bo-chong-sung-suong.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;nhung-ngay-nghi-ben-bo-chong-sung-suong.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;len-du-lon-nguoi-di-dam-dang-yu-shinoda.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;len-du-lon-nguoi-di-dam-dang-yu-shinoda.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;thay-giao-du-lon-nu-sinh-yuna-himekawa-moi-lon-trong-lop.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;thay-giao-du-lon-nu-sinh-yuna-himekawa-moi-lon-trong-lop.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;co-chi-gai-khac-cha-khac-me-cua-toi-momoe-takanashi.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;co-chi-gai-khac-cha-khac-me-cua-toi-momoe-takanashi.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-includes&#x2F;js&#x2F;wp-emoji-release.min.js" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-includes&#x2F;js&#x2F;wp-emoji-release.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;gai-lon-mup-di-dong-sex-gap-dung-anh-chim-to-dai.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;gai-lon-mup-di-dong-sex-gap-dung-anh-chim-to-dai.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;ga-dit-vo-cap-duoi-trong-van-phong.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;ga-dit-vo-cap-duoi-trong-van-phong.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;moc-lon-em-nhan-vien-cong-so-trong-van-phong.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;moc-lon-em-nhan-vien-cong-so-trong-van-phong.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;ngam-lon-ban-gai-xinh-dep-moi-yeu-ayumi-iwasa.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;ngam-lon-ban-gai-xinh-dep-moi-yeu-ayumi-iwasa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;chau-trai-mat-day-du-lon-thim-tre-dep-shoko-akiyama-640x360.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;chau-trai-mat-day-du-lon-thim-tre-dep-shoko-akiyama-640x360.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;co-em-gai-goi-cam-cua-nguoi-yeu-cuc-dam.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;co-em-gai-goi-cam-cua-nguoi-yeu-cuc-dam.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;02&#x2F;aki-sasaki-co-giao-chu-nhiem-sieu-nung-lop-toi.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;02&#x2F;aki-sasaki-co-giao-chu-nhiem-sieu-nung-lop-toi.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;bo-chong-dit-con-dau-vu-dep-mitsuha-kikukawa-khong-che.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;bo-chong-dit-con-dau-vu-dep-mitsuha-kikukawa-khong-che.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;em-tu-nhan-vuot-nguc-nung-lon-touka-rinne.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;em-tu-nhan-vuot-nguc-nung-lon-touka-rinne.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;em-hang-xom-uot-mua-xin-tru-nho.png" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;em-hang-xom-uot-mua-xin-tru-nho.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;me-ke-cho-liem-lon-dit-nhau-ngay-le-tot-nghiep.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;me-ke-cho-liem-lon-dit-nhau-ngay-le-tot-nghiep.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;phim-set-ve-que-du-lon-chi-ho-xinh-dep-iori-kogawa.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;phim-set-ve-que-du-lon-chi-ho-xinh-dep-iori-kogawa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;phim-heo-ke-hoach-cuop-chong-ban-than.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;phim-heo-ke-hoach-cuop-chong-ban-than.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;co-giao-dam-dang-phat-cac-nam-sinh-du-lon.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;co-giao-dam-dang-phat-cac-nam-sinh-du-lon.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;em-giup-viec-vu-to-lon-mup-dam-dang-harua-narimiya.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;em-giup-viec-vu-to-lon-mup-dam-dang-harua-narimiya.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;phuc-vu-em-truong-phong-xinh-dep-dam-dang-len-dinh.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;phuc-vu-em-truong-phong-xinh-dep-dam-dang-len-dinh.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;sang-nha-nguoi-yeu-choi-duoc-co-chi-ga-dit-cuc-khoai.jpg" target="_blank" class="external" rel="noreferrer noopener">phimsex.titdam.com&#x2F;wp-content&#x2F;uploads&#x2F;2024&#x2F;01&#x2F;sang-nha-nguoi-yeu-choi-duoc-co-chi-ga-dit-cuc-khoai.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://sextop1z.net" target="_blank" class="external">sextop1z.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://veudep.com" target="_blank" class="external">veudep.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vlxxz.com" target="_blank" class="external">vlxxz.com</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

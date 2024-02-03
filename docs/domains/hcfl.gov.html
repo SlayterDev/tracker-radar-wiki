@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - hcfl.gov</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "hcfl.gov",
+        history: [{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/hcfl.gov.ico' width="32" height="32" class='inline-block' /> hcfl.gov</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;18524<small>/24273</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>Other</span>,
+                    <span>Fetch</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/hcfl.gov.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>BroadcastChannel.prototype.constructor</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;entry.2722b496.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;entry.2722b496.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;meta.9e4f0601.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;meta.9e4f0601.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;meta-social.9d86ae16.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;meta-social.9d86ae16.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;entry.39084f53.css" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;entry.39084f53.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;default.622eafa7.css" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;default.622eafa7.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;default.c2047130.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;default.c2047130.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;Content.c6cc654c.css" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;Content.c6cc654c.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;VSheet.c18525e0.css" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;VSheet.c18525e0.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;page-l1.6de653df.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;page-l1.6de653df.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;Content.vue.edad88c0.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;Content.vue.edad88c0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;page.d4044db3.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;page.d4044db3.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;base-page.93765721.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;base-page.93765721.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;VSheet.3992ae61.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;VSheet.3992ae61.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;page-l2.f800f080.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;page-l2.f800f080.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;ListRelatives.vue.8b864d9a.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;ListRelatives.vue.8b864d9a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;index.vue.0a55ec51.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;index.vue.0a55ec51.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;Card.vue.03153da2.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;Card.vue.03153da2.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;page-l3.9d850193.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;page-l3.9d850193.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;WasThisPageHelpful.b63c7c66.css" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;WasThisPageHelpful.b63c7c66.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;VSelectionControl.46b111c3.css" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;VSelectionControl.46b111c3.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;page-l4.479708bc.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;page-l4.479708bc.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;WasThisPageHelpful.vue.76e12620.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;WasThisPageHelpful.vue.76e12620.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;VSelectionControl.0e3a571b.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;VSelectionControl.0e3a571b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;page-l4a.50ee8dd4.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;page-l4a.50ee8dd4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;util.17228f6b.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;util.17228f6b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;datetime.78deadb9.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;datetime.78deadb9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;algoliasearch-lite.esm.browser.40d4c7d6.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;algoliasearch-lite.esm.browser.40d4c7d6.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;algoliasearch.esm.browser.bf83cda1.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;algoliasearch.esm.browser.bf83cda1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;recommend.esm.browser.60057a0b.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;recommend.esm.browser.60057a0b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;algoliasearch-lite.esm.browser.40d4c7d6.js" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;algoliasearch-lite.esm.browser.40d4c7d6.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;_nuxt&#x2F;builds&#x2F;meta&#x2F;071ac097-61cf-44cc-bd2b-8f35272629a4.json" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;_nuxt&#x2F;builds&#x2F;meta&#x2F;071ac097-61cf-44cc-bd2b-8f35272629a4.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hcfl.gov&#x2F;api&#x2F;latest-news" target="_blank" class="external" rel="noreferrer noopener">hcfl.gov&#x2F;api&#x2F;latest-news</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://hillsboroughcounty.org" target="_blank" class="external">hillsboroughcounty.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hillsboroughcounty.org" target="_blank" class="external">www.hillsboroughcounty.org</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

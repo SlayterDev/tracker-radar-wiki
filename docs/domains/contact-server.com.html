@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "contact-server.com",
-        history: [{"date":"2022.12","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.01","prevalence":0.0000289,"sites":4,"fingerprinting":2,"cookies":0.0000289},{"date":"2023.02","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0.0000271},{"date":"2023.03","prevalence":0.0000135,"sites":2,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.04","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.05","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.06","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.07","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.08","prevalence":0.0000474,"sites":7,"fingerprinting":2,"cookies":0.0000474},{"date":"2023.09","prevalence":0.0000613,"sites":9,"fingerprinting":2,"cookies":0.0000477},{"date":"2023.10","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.000102},{"date":"2023.11","prevalence":0.0000954,"sites":14,"fingerprinting":2,"cookies":0.0000954},{"date":"2023.11.16","prevalence":0.0000954,"sites":14,"fingerprinting":2,"cookies":0.0000954},{"date":"2023.12","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.000102},{"date":"2024.01.04","prevalence":0.0000884,"sites":13,"fingerprinting":2,"cookies":0.0000884},{"date":"2024.01.18","prevalence":0.0000953,"sites":14,"fingerprinting":2,"cookies":0.0000885},{"date":"ci-2024-01-26-mgjpe","prevalence":0.0000953,"sites":14,"fingerprinting":2,"cookies":0.0000885}]
+        history: [{"date":"2022.12","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.01","prevalence":0.0000289,"sites":4,"fingerprinting":2,"cookies":0.0000289},{"date":"2023.02","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0.0000271},{"date":"2023.03","prevalence":0.0000135,"sites":2,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.04","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.05","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.06","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.07","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2023.08","prevalence":0.0000474,"sites":7,"fingerprinting":2,"cookies":0.0000474},{"date":"2023.09","prevalence":0.0000613,"sites":9,"fingerprinting":2,"cookies":0.0000477},{"date":"2023.10","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.000102},{"date":"2023.11","prevalence":0.0000954,"sites":14,"fingerprinting":2,"cookies":0.0000954},{"date":"2023.11.16","prevalence":0.0000954,"sites":14,"fingerprinting":2,"cookies":0.0000954},{"date":"2023.12","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.000102},{"date":"2024.01.04","prevalence":0.0000884,"sites":13,"fingerprinting":2,"cookies":0.0000884},{"date":"2024.01.18","prevalence":0.0000953,"sites":14,"fingerprinting":2,"cookies":0.0000885},{"date":"2024.01.31","prevalence":0.0000953,"sites":14,"fingerprinting":2,"cookies":0.0000885},{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000953,"sites":14,"fingerprinting":2,"cookies":0.0000885}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,7 +65,7 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;5056<small>/24121</small>
+                    <strong>Rank:</strong> &#35;5070<small>/24273</small>
                 </li>
                 <li class='py-1'>
                     <strong>Prevalence:</strong> 0.01&#37; (14 sites)
@@ -104,9 +104,11 @@
                     <span>ball-state-university</span>, 
                     <span>college-of-the-ozarks</span>, 
                     <span>gordon-college</span>, 
+                    <span>rensselaer-polytechnic-institute</span>, 
                     <span>suffolk-university-business-graduate-program-alr</span>, 
                     <span>university-of-texas-at-arlington-social-work-grad-1726-sj-1-2</span>, 
                     <span>suffolk-university-law</span>, 
+                    <span>university-of-texas-at-arlington-1667-sj-1-2</span>, 
                 </li>
             </ul>
         </div>
@@ -125,6 +127,27 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+    </ul>
+</div>
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>CNAMEs</h3>
@@ -134,6 +157,9 @@
         </li>
         <li class='truncate'>
             <a href="http://go.graduatecollege.nau.edu" target="_blank" class="external">go.graduatecollege.nau.edu</a> &#x2192; <a href="http://northern-arizona-grad.contact-server.com" target="_blank" class="external">northern-arizona-grad.contact-server.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://go.inspire.uta.edu" target="_blank" class="external">go.inspire.uta.edu</a> &#x2192; <a href="http://university-of-texas-at-arlington-1667-sj-1-2.contact-server.com" target="_blank" class="external">university-of-texas-at-arlington-1667-sj-1-2.contact-server.com</a>
         </li>
         <li class='truncate'>
             <a href="http://go.lawschool.suffolk.edu" target="_blank" class="external">go.lawschool.suffolk.edu</a> &#x2192; <a href="http://suffolk-university-law.contact-server.com" target="_blank" class="external">suffolk-university-law.contact-server.com</a>
@@ -172,7 +198,7 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://embry-riddle-aeronautical-university-az.contact-server.com&#x2F;mtc.js" target="_blank" class="external" rel="noreferrer noopener">embry-riddle-aeronautical-university-az.contact-server.com&#x2F;mtc.js</a> (seen on 9 websites)</p>
+            <p><a href="http://embry-riddle-aeronautical-university-az.contact-server.com&#x2F;mtc.js" target="_blank" class="external" rel="noreferrer noopener">embry-riddle-aeronautical-university-az.contact-server.com&#x2F;mtc.js</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://embry-riddle-aeronautical-university-az.contact-server.com&#x2F;mtc&#x2F;event" target="_blank" class="external" rel="noreferrer noopener">embry-riddle-aeronautical-university-az.contact-server.com&#x2F;mtc&#x2F;event</a> (seen on 9 websites)</p>
@@ -213,6 +239,9 @@
         </li>
         <li class='truncate'>
             <a href="http://www.gordon.edu" target="_blank" class="external">www.gordon.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.rpi.edu" target="_blank" class="external">www.rpi.edu</a>
         </li>
         <li class='truncate'>
             <a href="http://www.suffolk.edu" target="_blank" class="external">www.suffolk.edu</a>

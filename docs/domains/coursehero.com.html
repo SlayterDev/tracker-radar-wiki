@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "coursehero.com",
-        history: [{"date":"2023.12","prevalence":0.0000204,"sites":3,"fingerprinting":3,"cookies":0.0000136},{"date":"2024.01.04","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.0000136},{"date":"2024.01.18","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0.0000136},{"date":"ci-2024-01-26-mgjpe","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0.0000136}]
+        history: [{"date":"2023.12","prevalence":0.0000204,"sites":3,"fingerprinting":3,"cookies":0.0000136},{"date":"2024.01.04","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.0000136},{"date":"2024.01.18","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0.0000136},{"date":"2024.01.31","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0.0000136},{"date":"ci-2024-02-03-kvqrm","prevalence":0.000034,"sites":5,"fingerprinting":1,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;12542<small>/24121</small>
+                    <strong>Rank:</strong> &#35;9266<small>/24273</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (5 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -94,14 +94,17 @@
                     <span>Document</span>,
                     <span>Font</span>,
                     <span>Stylesheet</span>,
+                    <span>Other</span>,
                     <span>Script</span>,
                     <span>Image</span>,
+                    <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/coursehero.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>www</span>, 
                     <span>assets</span>, 
+                    <span>api</span>, 
                 </li>
             </ul>
         </div>
@@ -130,7 +133,12 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
 
@@ -139,13 +147,13 @@
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p>loaded directly - 90.48% of loads</p>
+            <p>loaded directly - 90.00% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./googletagmanager.com.html">googletagmanager.com</a> - 4.76% of loads</p>
+            <p><a href="./googletagmanager.com.html">googletagmanager.com</a> - 5.00% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./cookielaw.org.html">cookielaw.org</a> - 4.76% of loads</p>
+            <p><a href="./cookielaw.org.html">cookielaw.org</a> - 5.00% of loads</p>
         </li>
     </ul>
 </div>
@@ -153,6 +161,12 @@
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;lib&#x2F;ilink.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;lib&#x2F;ilink.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.coursehero.com&#x2F;ilink&#x2F;assets&#x2F;l.gif" target="_blank" class="external" rel="noreferrer noopener">www.coursehero.com&#x2F;ilink&#x2F;assets&#x2F;l.gif</a> (seen on 3 websites)</p>
+        </li>
         <li class='break-all'>
             <p><a href="http://www.coursehero.com&#x2F;widget&#x2F;aaq&#x2F;8910233251" target="_blank" class="external" rel="noreferrer noopener">www.coursehero.com&#x2F;widget&#x2F;aaq&#x2F;8910233251</a> (seen on 2 websites)</p>
         </li>
@@ -187,10 +201,61 @@
             <p><a href="http://assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:head:searchWidget.4780f577.css" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:head:searchWidget.4780f577.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://assets.coursehero.com&#x2F;lib&#x2F;ilink.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;lib&#x2F;ilink.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://www.coursehero.com&#x2F;csp_report" target="_blank" class="external" rel="noreferrer noopener">www.coursehero.com&#x2F;csp_report</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.coursehero.com&#x2F;ilink&#x2F;assets&#x2F;l.gif" target="_blank" class="external" rel="noreferrer noopener">www.coursehero.com&#x2F;ilink&#x2F;assets&#x2F;l.gif</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;vendors.3a4708c21ac359996b80.bundle.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;vendors.3a4708c21ac359996b80.bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;SsiMdsAaqWidget.58568ada0b60f2888b06.bundle.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;SsiMdsAaqWidget.58568ada0b60f2888b06.bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.coursehero.com&#x2F;Ifainesse-What-mine-Alasterd-the-How-I-haile-Lad" target="_blank" class="external" rel="noreferrer noopener">www.coursehero.com&#x2F;Ifainesse-What-mine-Alasterd-the-How-I-haile-Lad</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:common:amplitudeLoader.af9cd86a.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:common:amplitudeLoader.af9cd86a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:dashboardNavbar.71ce321b.css" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:dashboardNavbar.71ce321b.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;assetic:noJquery.2fd54c43.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;assetic:noJquery.2fd54c43.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:foot.3b11235d.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:foot.3b11235d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:common:foot:excludeLegacy.1022cc03.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;assets&#x2F;legacy&#x2F;layout-bundle:common:foot:excludeLegacy.1022cc03.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.coursehero.com&#x2F;api&#x2F;connect&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.coursehero.com&#x2F;api&#x2F;connect&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.coursehero.com&#x2F;assets&#x2F;js&#x2F;vendor&#x2F;amplitude-7.1.0-min.gz.js" target="_blank" class="external" rel="noreferrer noopener">www.coursehero.com&#x2F;assets&#x2F;js&#x2F;vendor&#x2F;amplitude-7.1.0-min.gz.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.coursehero.com&#x2F;v1&#x2F;amplitude&#x2F;" target="_blank" class="external" rel="noreferrer noopener">api.coursehero.com&#x2F;v1&#x2F;amplitude&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;vendors.9f40ccabd11af97b6e3a.bundle.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;vendors.9f40ccabd11af97b6e3a.bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;SsiSite.727e251f8d87a0043596.bundle.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;SsiSite.727e251f8d87a0043596.bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;5471.1e7ec2fe615b5f272cb2.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;5471.1e7ec2fe615b5f272cb2.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;6565.7f8cb61756cc785cf8cc.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;6565.7f8cb61756cc785cf8cc.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;8525.d90e1cf57cbc473172e0.js" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;8525.d90e1cf57cbc473172e0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;51257f3da318b313edde.svg" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;51257f3da318b313edde.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.coursehero.com&#x2F;ssi&#x2F;b26f6b08123071a64384.svg" target="_blank" class="external" rel="noreferrer noopener">assets.coursehero.com&#x2F;ssi&#x2F;b26f6b08123071a64384.svg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -207,6 +272,9 @@
         </li>
         <li class='truncate'>
             <a href="http://www.coursesidekick.com" target="_blank" class="external">www.coursesidekick.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://coursesidekick.com" target="_blank" class="external">coursesidekick.com</a>
         </li>
     </ul>
 </div>

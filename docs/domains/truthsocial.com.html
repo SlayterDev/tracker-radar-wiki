@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "truthsocial.com",
-        history: [{"date":"2023.01","prevalence":0.0000289,"sites":4,"fingerprinting":0,"cookies":0.0000289},{"date":"2023.02","prevalence":0.0000338,"sites":5,"fingerprinting":2,"cookies":0.0000271},{"date":"2023.03","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.05","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272},{"date":"2023.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.07","prevalence":0.0000204,"sites":3,"fingerprinting":3,"cookies":0.0000204},{"date":"2023.08","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.09","prevalence":0.0000204,"sites":3,"fingerprinting":3,"cookies":0.0000204},{"date":"2023.10","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272},{"date":"2023.11","prevalence":0.0000272,"sites":4,"fingerprinting":0,"cookies":0.0000272},{"date":"2023.11.16","prevalence":0.0000272,"sites":4,"fingerprinting":0,"cookies":0.0000272},{"date":"2023.12","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2024.01.04","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272},{"date":"2024.01.18","prevalence":0.0000204,"sites":3,"fingerprinting":0,"cookies":0.0000204},{"date":"ci-2024-01-26-mgjpe","prevalence":0.0000204,"sites":3,"fingerprinting":0,"cookies":0.0000204}]
+        history: [{"date":"2023.01","prevalence":0.0000289,"sites":4,"fingerprinting":0,"cookies":0.0000289},{"date":"2023.02","prevalence":0.0000338,"sites":5,"fingerprinting":2,"cookies":0.0000271},{"date":"2023.03","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.05","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272},{"date":"2023.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.07","prevalence":0.0000204,"sites":3,"fingerprinting":3,"cookies":0.0000204},{"date":"2023.08","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.09","prevalence":0.0000204,"sites":3,"fingerprinting":3,"cookies":0.0000204},{"date":"2023.10","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272},{"date":"2023.11","prevalence":0.0000272,"sites":4,"fingerprinting":0,"cookies":0.0000272},{"date":"2023.11.16","prevalence":0.0000272,"sites":4,"fingerprinting":0,"cookies":0.0000272},{"date":"2023.12","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.000034},{"date":"2024.01.04","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272},{"date":"2024.01.18","prevalence":0.0000204,"sites":3,"fingerprinting":0,"cookies":0.0000204},{"date":"2024.01.31","prevalence":0.0000204,"sites":3,"fingerprinting":0,"cookies":0.0000204},{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;14346<small>/24121</small>
+                    <strong>Rank:</strong> &#35;11861<small>/24273</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -91,10 +91,19 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                    <span>Media</span>,
+                    <span>XHR</span>,
+                    <span>Other</span>,
+                    <span>Fetch</span>,
+                    <span>Document</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/truthsocial.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>static-assets-1</span>, 
                 </li>
             </ul>
         </div>
@@ -113,16 +122,47 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>Navigator.prototype.onLine</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>window.matchMedia(&quot;prefers-color-scheme&quot;)</li>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p><a href="./webcontentassessor.com.html">webcontentassessor.com</a> - 66.67% of loads</p>
+            <p>loaded directly - 75.00% of loads</p>
         </li>
         <li class='truncate'>
-            <p>loaded directly - 33.33% of loads</p>
+            <p><a href="./webcontentassessor.com.html">webcontentassessor.com</a> - 25.00% of loads</p>
         </li>
     </ul>
 </div>
@@ -131,7 +171,94 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;instance&#x2F;ios.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;instance&#x2F;ios.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;js&#x2F;common-115aac9728426bdb08a3.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;js&#x2F;common-115aac9728426bdb08a3.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;js&#x2F;application-9e1504ecfe44e011840d.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;js&#x2F;application-9e1504ecfe44e011840d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;css&#x2F;application-a0c64414.css" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;css&#x2F;application-a0c64414.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;js&#x2F;error-f79ccf9f9c62540e8d24.chunk.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;js&#x2F;error-f79ccf9f9c62540e8d24.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;favicon.png" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;favicon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;fonts&#x2F;inter-latin-400-normal-5e6a773d.woff2" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;fonts&#x2F;inter-latin-400-normal-5e6a773d.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;sounds&#x2F;boop-bd6d6a6a.ogg" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;sounds&#x2F;boop-bd6d6a6a.ogg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;sounds&#x2F;chat-bca16b82.oga" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;sounds&#x2F;chat-bca16b82.oga</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;js&#x2F;locale_en-json-6faa20d336d4db2ae5c2.chunk.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;js&#x2F;locale_en-json-6faa20d336d4db2ae5c2.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;api&#x2F;v1&#x2F;instance" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;api&#x2F;v1&#x2F;instance</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;sw.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;sw.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;js&#x2F;application-9e1504ecfe44e011840d.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;js&#x2F;application-9e1504ecfe44e011840d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;js&#x2F;common-115aac9728426bdb08a3.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;js&#x2F;common-115aac9728426bdb08a3.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;css&#x2F;application-a0c64414.css" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;css&#x2F;application-a0c64414.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;api&#x2F;v2&#x2F;pepe&#x2F;instance" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;api&#x2F;v2&#x2F;pepe&#x2F;instance</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;api&#x2F;v1&#x2F;pepe&#x2F;registrations" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;api&#x2F;v1&#x2F;pepe&#x2F;registrations</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;@realDonaldTrump&#x2F;111814756155519857&#x2F;embed" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;@realDonaldTrump&#x2F;111814756155519857&#x2F;embed</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;@realDonaldTrump&#x2F;111814755511954428&#x2F;embed" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;@realDonaldTrump&#x2F;111814755511954428&#x2F;embed</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://truthsocial.com&#x2F;embed.js" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;embed.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;fonts&#x2F;inter-latin-600-normal-5ac6cfcf.woff2" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;fonts&#x2F;inter-latin-600-normal-5ac6cfcf.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;api&#x2F;v1&#x2F;accounts&#x2F;relationships" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;api&#x2F;v1&#x2F;accounts&#x2F;relationships</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;instance&#x2F;images&#x2F;verified.svg" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;instance&#x2F;images&#x2F;verified.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;icons&#x2F;message-circle-2-02eae93d.svg" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;icons&#x2F;message-circle-2-02eae93d.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;icons&#x2F;repeat-d4cd9646.svg" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;icons&#x2F;repeat-d4cd9646.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;icons&#x2F;heart-027cb8a7.svg" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;icons&#x2F;heart-027cb8a7.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;packs&#x2F;icons&#x2F;dots-2e77619c.svg" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;packs&#x2F;icons&#x2F;dots-2e77619c.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-assets-1.truthsocial.com&#x2F;tmtg:prime-ts-assets&#x2F;accounts&#x2F;avatars&#x2F;107&#x2F;780&#x2F;257&#x2F;626&#x2F;128&#x2F;497&#x2F;original&#x2F;454286ac07a6f6e6.jpeg" target="_blank" class="external" rel="noreferrer noopener">static-assets-1.truthsocial.com&#x2F;tmtg:prime-ts-assets&#x2F;accounts&#x2F;avatars&#x2F;107&#x2F;780&#x2F;257&#x2F;626&#x2F;128&#x2F;497&#x2F;original&#x2F;454286ac07a6f6e6.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://truthsocial.com&#x2F;instance&#x2F;images&#x2F;truth-logo.svg" target="_blank" class="external" rel="noreferrer noopener">truthsocial.com&#x2F;instance&#x2F;images&#x2F;truth-logo.svg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -141,10 +268,13 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://breitbart.com" target="_blank" class="external">breitbart.com</a>
+            <a href="http://althouse.blogspot.com" target="_blank" class="external">althouse.blogspot.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.breitbart.com" target="_blank" class="external">www.breitbart.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://breitbart.com" target="_blank" class="external">breitbart.com</a>
         </li>
     </ul>
 </div>

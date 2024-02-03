@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "fatmap.com",
-        history: [{"date":"2023.08","prevalence":0.00000677,"sites":1,"fingerprinting":3,"cookies":0},{"date":"2023.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.0000068},{"date":"2024.01.18","prevalence":0.00000681,"sites":1,"fingerprinting":1,"cookies":0},{"date":"ci-2024-01-26-mgjpe","prevalence":0.00000681,"sites":1,"fingerprinting":1,"cookies":0}]
+        history: [{"date":"2023.08","prevalence":0.00000677,"sites":1,"fingerprinting":3,"cookies":0},{"date":"2023.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.0000068},{"date":"2024.01.18","prevalence":0.00000681,"sites":1,"fingerprinting":1,"cookies":0},{"date":"2024.01.31","prevalence":0.00000681,"sites":1,"fingerprinting":1,"cookies":0},{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.00000681}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;22745<small>/24121</small>
+                    <strong>Rank:</strong> &#35;18023<small>/24273</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (1 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,13 +90,20 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Document</span>,
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>Font</span>,
+                    <span>XHR</span>,
+                    <span>Preflight</span>,
                     <span>Fetch</span>,
+                    <span>Document</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/fatmap.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>map-assets</span>, 
                     <span>embeds</span>, 
+                    <span>rs-dataplane.bi</span>, 
                 </li>
             </ul>
         </div>
@@ -115,6 +122,37 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>WebGL2RenderingContext.prototype.readPixels</li>
+        <li class='truncate'>WebGL2RenderingContext.prototype.getParameter</li>
+        <li class='truncate'>WebGL2RenderingContext.prototype.getExtension</li>
+        <li class='truncate'>WebGL2RenderingContext.prototype.getContextAttributes</li>
+        <li class='truncate'>Navigator.prototype.storage</li>
+        <li class='truncate'>WebGL2RenderingContext.prototype.getShaderPrecisionFormat</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>URL.createObjectURL</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5 border-b'>
@@ -130,34 +168,145 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
+            <p><a href="http://map-assets.fatmap.com&#x2F;ref&#x2F;v1.2.3&#x2F;js&#x2F;fatmap.js" target="_blank" class="external" rel="noreferrer noopener">map-assets.fatmap.com&#x2F;ref&#x2F;v1.2.3&#x2F;js&#x2F;fatmap.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://fatmap.com&#x2F;assets&#x2F;7933919913c5390fb9bf.css" target="_blank" class="external" rel="noreferrer noopener">fatmap.com&#x2F;assets&#x2F;7933919913c5390fb9bf.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://fatmap.com&#x2F;assets&#x2F;4446994a2fdd60edc697.js" target="_blank" class="external" rel="noreferrer noopener">fatmap.com&#x2F;assets&#x2F;4446994a2fdd60edc697.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;c9a5bc6a7c948fb0-s.p.woff2" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;c9a5bc6a7c948fb0-s.p.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;225707aa9293c2a6.css" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;225707aa9293c2a6.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-1895f86b55f0412a.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-1895f86b55f0412a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-5429a50ba5373c56.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-5429a50ba5373c56.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-a04108c77c59a705.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-a04108c77c59a705.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-bc9e806227b786fc.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-bc9e806227b786fc.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3-8906fe933c1d2e4b.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3-8906fe933c1d2e4b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;172-5f2325eb7bbca1ad.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;172-5f2325eb7bbca1ad.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;506-973ebd130cc43430.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;506-973ebd130cc43430.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;882-148e50f92fd9859a.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;882-148e50f92fd9859a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;3lGo535IubXyVjuumD811&#x2F;_buildManifest.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;3lGo535IubXyVjuumD811&#x2F;_buildManifest.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;3lGo535IubXyVjuumD811&#x2F;_ssgManifest.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;3lGo535IubXyVjuumD811&#x2F;_ssgManifest.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;677deae0.964f5a93df4301bb.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;677deae0.964f5a93df4301bb.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;444.d6eaed791f90f979.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;444.d6eaed791f90f979.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;689.ce92939455611266.js" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;689.ce92939455611266.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://rs-dataplane.bi.fatmap.com&#x2F;v1&#x2F;page" target="_blank" class="external" rel="noreferrer noopener">rs-dataplane.bi.fatmap.com&#x2F;v1&#x2F;page</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://rs-dataplane.bi.fatmap.com&#x2F;v1&#x2F;page" target="_blank" class="external" rel="noreferrer noopener">rs-dataplane.bi.fatmap.com&#x2F;v1&#x2F;page</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainGradient.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainGradient.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainAvalanche.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainAvalanche.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainFlats.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainFlats.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainAspect.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainAspect.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainAltitude.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Terrain&#x2F;TerrainAltitude.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Clear.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Textures&#x2F;Clear.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;GeneratedShaders&#x2F;bundle.txt" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;GeneratedShaders&#x2F;bundle.txt</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;StyleOpacityConfig.json" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;StyleOpacityConfig.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;Icons.json" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;Icons.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_semi_bold.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_semi_bold.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_semi_bold.json" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_semi_bold.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium_italic.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium_italic.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium_italic.json" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium_italic.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium.json" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_medium.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_bold.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_bold.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_bold.json" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Fonts&#x2F;inter_bold.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Unknown.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Unknown.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Open.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Open.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Waiting.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Waiting.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Closed.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Closed.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_OutOfOperation.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_OutOfOperation.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Unknown.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Unknown.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Open.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Open.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Waiting.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Waiting.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Closed.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.3&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Closed.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://embeds.fatmap.com&#x2F;activity&#x2F;pistes&#x2F;@47.34,11.228" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;activity&#x2F;pistes&#x2F;@47.34,11.228</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Unknown.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Unknown.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Open.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Open.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Waiting.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Waiting.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Closed.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_Closed.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_OutOfOperation.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Lift_Status_OutOfOperation.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Unknown.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Unknown.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Open.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Open.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Waiting.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Waiting.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Closed.png" target="_blank" class="external" rel="noreferrer noopener">embeds.fatmap.com&#x2F;fatmap.js-1.3.0&#x2F;package&#x2F;Shared&#x2F;Configs&#x2F;GeneratedIcons&#x2F;X1&#x2F;Map_Mob_Dual_Pistes_Status_Closed.png</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -167,10 +316,13 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://snow-forecast.com" target="_blank" class="external">snow-forecast.com</a>
+            <a href="http://earth3dmap.com" target="_blank" class="external">earth3dmap.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.snow-forecast.com" target="_blank" class="external">www.snow-forecast.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://snow-forecast.com" target="_blank" class="external">snow-forecast.com</a>
         </li>
     </ul>
 </div>

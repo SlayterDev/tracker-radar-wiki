@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "sf.gov",
-        history: [{"date":"2023.10","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2023.11","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2023.11.16","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2023.12","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0},{"date":"2024.01.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"ci-2024-01-26-mgjpe","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0}]
+        history: [{"date":"2023.10","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2023.11","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2023.11.16","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2023.12","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0},{"date":"2024.01.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2024.01.31","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;20522<small>/24121</small>
+                    <strong>Rank:</strong> &#35;14144<small>/24273</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -91,6 +91,9 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>Document</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/sf.gov.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -114,16 +117,30 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p><a href="./datasf.org.html">datasf.org</a> - 66.67% of loads</p>
+            <p><a href="./datasf.org.html">datasf.org</a> - 50.00% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./translate.googleapis.com.html">translate.googleapis.com</a> - 33.33% of loads</p>
+            <p><a href="./translate.googleapis.com.html">translate.googleapis.com</a> - 50.00% of loads</p>
         </li>
     </ul>
 </div>
@@ -133,6 +150,39 @@
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
             <p><a href="http://www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;info-white.svg" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;info-white.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;google_tag&#x2F;sfgov&#x2F;google_tag.script.js" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;google_tag&#x2F;sfgov&#x2F;google_tag.script.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_M3_zc6mrgxrbNxlPMfiy91esOYIv-G3vs2h7EA6pnfo.css" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_M3_zc6mrgxrbNxlPMfiy91esOYIv-G3vs2h7EA6pnfo.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;logo.svg" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;logo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;sfgov.svg" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;sfgov.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;logo-white.svg" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;logo-white.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_bXdX7VO-viJXW9t3HfhN2-m682iFaJuXca1BR70IMLA.js" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_bXdX7VO-viJXW9t3HfhN2-m682iFaJuXca1BR70IMLA.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;dist&#x2F;js&#x2F;sfds.js" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;dist&#x2F;js&#x2F;sfds.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;search-white.svg" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;search-white.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;icons&#x2F;chevron-up-white.svg" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;themes&#x2F;custom&#x2F;sfgovpl&#x2F;src&#x2F;img&#x2F;icons&#x2F;chevron-up-white.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;publichealth&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;publichealth&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.sf.gov&#x2F;departments&#x2F;department-public-health" target="_blank" class="external" rel="noreferrer noopener">www.sf.gov&#x2F;departments&#x2F;department-public-health</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -146,6 +196,12 @@
         </li>
         <li class='truncate'>
             <a href="http://data.sfgov.org" target="_blank" class="external">data.sfgov.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sfdph.org" target="_blank" class="external">www.sfdph.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sfdph.org" target="_blank" class="external">sfdph.org</a>
         </li>
     </ul>
 </div>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "dcpsvjmu5hpqr.cloudfront.net",
-        history: [{"date":"2023.09","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"ci-2024-01-26-mgjpe","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"2023.09","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2024.01.31","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"ci-2024-02-03-kvqrm","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;17205<small>/24121</small>
+                    <strong>Rank:</strong> &#35;17310<small>/24273</small>
                 </li>
                 <li class='py-1'>
                     <strong>Prevalence:</strong> 0.00&#37; (2 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,6 +90,9 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>Font</span>,
                     <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/dcpsvjmu5hpqr.cloudfront.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
@@ -113,13 +116,46 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.onLine</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Notification.permission</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>BroadcastChannel.prototype.constructor</li>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p>loaded directly - 100.00% of loads</p>
+            <p>loaded directly - 80.00% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./dynamicyield.com.html">dynamicyield.com</a> - 20.00% of loads</p>
         </li>
     </ul>
 </div>
@@ -128,7 +164,82 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;5b42e14.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;5b42e14.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;50f8699.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;50f8699.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;css&#x2F;7c49ec6.css" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;css&#x2F;7c49ec6.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;247def0.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;247def0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;css&#x2F;414fb8e.css" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;css&#x2F;414fb8e.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;b5fc10f.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;b5fc10f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;d2f72c7.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;d2f72c7.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;91a98d9.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;91a98d9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;389878e.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;389878e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;4220e2c.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;4220e2c.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;705b8c4.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;705b8c4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;711ae4b.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;711ae4b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;a51b913.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;a51b913.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;35f64c0.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;35f64c0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;093f7fc.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;093f7fc.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;fonts&#x2F;Lato-Medium.e749bf3.woff2" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;fonts&#x2F;Lato-Medium.e749bf3.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;images&#x2F;2019-10&#x2F;57751b4a0e82608c74d8a728.svg" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;images&#x2F;2019-10&#x2F;57751b4a0e82608c74d8a728.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;55e9272.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;55e9272.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;37d2eb8.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;37d2eb8.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;8db7a53.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;8db7a53.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;7526150.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;7526150.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;5b79a49.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;5b79a49.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;9f31e8a.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;9f31e8a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;baf61f9.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;baf61f9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;667806d.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;667806d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;206958c.js" target="_blank" class="external" rel="noreferrer noopener">dcpsvjmu5hpqr.cloudfront.net&#x2F;_nuxt&#x2F;206958c.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
