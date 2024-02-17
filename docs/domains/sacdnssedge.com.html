@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - sacdnssedge.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "sacdnssedge.com",
+        history: [{"date":"2024.02.09","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"ci-2024-02-17-epcmu","prevalence":0.000538,"sites":79,"fingerprinting":0,"cookies":0}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/sacdnssedge.com.ico' width="32" height="32" class='inline-block' /> sacdnssedge.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;1782<small>/24287</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.05&#37; (79 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Fetch</span>,
+                    <span>Media</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/sacdnssedge.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>video</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Top Initiators</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <p>loaded directly - 61.80% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./mnaspm.com.html">mnaspm.com</a> - 13.48% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./xlivrdr.com.html">xlivrdr.com</a> - 5.62% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./bbrdbr.com.html">bbrdbr.com</a> - 5.62% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./xlirdr.com.html">xlirdr.com</a> - 3.37% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./rmshqa.com.html">rmshqa.com</a> - 2.25% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./rmhfrtnd.com.html">rmhfrtnd.com</a> - 2.25% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./prnteen.com.html">prnteen.com</a> - 2.25% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./xlviiirdr.com.html">xlviiirdr.com</a> - 1.12% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./xlviirdr.com.html">xlviirdr.com</a> - 1.12% of loads</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;checkUrl" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;checkUrl</a> (seen on 31 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_9e530fd09d0a40235b6513346ad0f921.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_9e530fd09d0a40235b6513346ad0f921.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_02711f747beec724611f12db46a49dc6.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_02711f747beec724611f12db46a49dc6.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_d23e315414aeaad2504e4361476c36a1.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_d23e315414aeaad2504e4361476c36a1.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_b229977b1edf9b5f2f543391ad966a35.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_b229977b1edf9b5f2f543391ad966a35.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_758c423a7910717db1a8bfd0451c054b.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_758c423a7910717db1a8bfd0451c054b.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_ca7a25577bb4757a4ad2e242f4e20d4b.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_ca7a25577bb4757a4ad2e242f4e20d4b.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_0364ffd863007c9f0bd239735cd31579.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_0364ffd863007c9f0bd239735cd31579.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_737f2695d2cec0c173c2d316414cd7b2.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_737f2695d2cec0c173c2d316414cd7b2.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_229f6f1073d4d71f79cd956852a57a34.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_229f6f1073d4d71f79cd956852a57a34.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_7014f804eb98c53867a33ed0fc08e2cd.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_7014f804eb98c53867a33ed0fc08e2cd.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_174b0971b726a71ba1871d200b9d1ef5.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_174b0971b726a71ba1871d200b9d1ef5.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_b3406cc24de62b06316f6ff4c1b334c0.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_b3406cc24de62b06316f6ff4c1b334c0.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_322913f01e283c2f07751689dfaf62e2.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_322913f01e283c2f07751689dfaf62e2.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_1025f2b9368cad1c9c150ab69e44b04c.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_1025f2b9368cad1c9c150ab69e44b04c.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_1e55f39a31ac7e87de82575dd40a0072.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_1e55f39a31ac7e87de82575dd40a0072.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_4158f08a5118b5c7c4b8d8c8d6a49451.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_4158f08a5118b5c7c4b8d8c8d6a49451.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;7660bb220b2ffefbbcd74e4cebdd080e.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;7660bb220b2ffefbbcd74e4cebdd080e.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_f1098ed4ae0e7084bd46f38a1d502b05.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_f1098ed4ae0e7084bd46f38a1d502b05.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_8f6fc6d6d7667ff8e915e12e2292aef4.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_8f6fc6d6d7667ff8e915e12e2292aef4.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_4e5e73042f5dd40065b0b3f3a0b3bea0.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_4e5e73042f5dd40065b0b3f3a0b3bea0.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_deffc90619bc36aa2ad50399fc7c74d4.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_deffc90619bc36aa2ad50399fc7c74d4.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_4b6402312a3486a054ae1942a0cf8da9.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_4b6402312a3486a054ae1942a0cf8da9.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.sacdnssedge.com&#x2F;video&#x2F;ol_bc6dffc6550c4114c0c56790f6981d8f.mp4" target="_blank" class="external" rel="noreferrer noopener">video.sacdnssedge.com&#x2F;video&#x2F;ol_bc6dffc6550c4114c0c56790f6981d8f.mp4</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://hdzog.com" target="_blank" class="external">hdzog.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://enf-cmnf.com" target="_blank" class="external">enf-cmnf.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://contoseroticoscnn.com" target="_blank" class="external">contoseroticoscnn.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://kr3.hasha.in" target="_blank" class="external">kr3.hasha.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://es.spankbang.com" target="_blank" class="external">es.spankbang.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hypnotube.com" target="_blank" class="external">www.hypnotube.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://porngw.com" target="_blank" class="external">porngw.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.oolveri.com" target="_blank" class="external">www.oolveri.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fpo.xxx" target="_blank" class="external">www.fpo.xxx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://escortnear.me" target="_blank" class="external">escortnear.me</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.xxbrits.com" target="_blank" class="external">www.xxbrits.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://phimhdsex.com" target="_blank" class="external">phimhdsex.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://javrider.com" target="_blank" class="external">javrider.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://freeadultcomix.com" target="_blank" class="external">freeadultcomix.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://celebgate.org" target="_blank" class="external">celebgate.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://grannypornpics.com" target="_blank" class="external">grannypornpics.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ohentai.org" target="_blank" class="external">ohentai.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://jav.direct" target="_blank" class="external">jav.direct</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://novelcrow.com" target="_blank" class="external">novelcrow.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.papalah.com" target="_blank" class="external">www.papalah.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://spankbang.com" target="_blank" class="external">spankbang.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://br.spankbang.com" target="_blank" class="external">br.spankbang.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://justthegays.com" target="_blank" class="external">justthegays.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://manytoon.com" target="_blank" class="external">manytoon.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://3movs.xxx" target="_blank" class="external">3movs.xxx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.3movs.xxx" target="_blank" class="external">www.3movs.xxx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://amateur8.com" target="_blank" class="external">amateur8.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.amateur8.com" target="_blank" class="external">www.amateur8.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cartoonporn.com" target="_blank" class="external">cartoonporn.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cartoonporn.com" target="_blank" class="external">www.cartoonporn.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://desikahani2.net" target="_blank" class="external">desikahani2.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.desikahani2.net" target="_blank" class="external">www.desikahani2.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fapguru.com" target="_blank" class="external">fapguru.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fapguru.com" target="_blank" class="external">www.fapguru.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://its.porn" target="_blank" class="external">its.porn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.its.porn" target="_blank" class="external">www.its.porn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mypornhere.com" target="_blank" class="external">mypornhere.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mypornhere.com" target="_blank" class="external">www.mypornhere.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://onlyporn.tube" target="_blank" class="external">onlyporn.tube</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.onlyporn.tube" target="_blank" class="external">www.onlyporn.tube</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pornditt.com" target="_blank" class="external">pornditt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pornditt.com" target="_blank" class="external">www.pornditt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://porndr.com" target="_blank" class="external">porndr.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.porndr.com" target="_blank" class="external">www.porndr.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://porngo.com" target="_blank" class="external">porngo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.porngo.com" target="_blank" class="external">www.porngo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://porntry.com" target="_blank" class="external">porntry.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.porntry.com" target="_blank" class="external">www.porntry.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://videojav.com" target="_blank" class="external">videojav.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.videojav.com" target="_blank" class="external">www.videojav.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://xerotica.com" target="_blank" class="external">xerotica.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.xerotica.com" target="_blank" class="external">www.xerotica.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://xtits.com" target="_blank" class="external">xtits.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.xtits.com" target="_blank" class="external">www.xtits.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://xxnx.video" target="_blank" class="external">xxnx.video</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.xxnx.video" target="_blank" class="external">www.xxnx.video</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

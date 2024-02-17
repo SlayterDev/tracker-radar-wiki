@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "elements.video",
-        history: [{"date":"2023.03","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0.00000677},{"date":"2023.04","prevalence":0.0000272,"sites":4,"fingerprinting":1,"cookies":0.00000681},{"date":"2023.05","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.06","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.07","prevalence":0.0000204,"sites":3,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.08","prevalence":0.0000135,"sites":2,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.09","prevalence":0.0000204,"sites":3,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.10","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.11","prevalence":0.0000409,"sites":6,"fingerprinting":1,"cookies":0.0000204},{"date":"2023.11.16","prevalence":0.0000409,"sites":6,"fingerprinting":1,"cookies":0.0000204},{"date":"2023.12","prevalence":0.0000544,"sites":8,"fingerprinting":2,"cookies":0.000034},{"date":"2024.01.04","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0.000034},{"date":"2024.01.18","prevalence":0.000034,"sites":5,"fingerprinting":1,"cookies":0.00000681},{"date":"ci-2024-01-26-mgjpe","prevalence":0.000034,"sites":5,"fingerprinting":1,"cookies":0.00000681}]
+        history: [{"date":"2023.03","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0.00000677},{"date":"2023.04","prevalence":0.0000272,"sites":4,"fingerprinting":1,"cookies":0.00000681},{"date":"2023.05","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.06","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.07","prevalence":0.0000204,"sites":3,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.08","prevalence":0.0000135,"sites":2,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.09","prevalence":0.0000204,"sites":3,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.10","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.11","prevalence":0.0000409,"sites":6,"fingerprinting":1,"cookies":0.0000204},{"date":"2023.11.16","prevalence":0.0000409,"sites":6,"fingerprinting":1,"cookies":0.0000204},{"date":"2023.12","prevalence":0.0000544,"sites":8,"fingerprinting":2,"cookies":0.000034},{"date":"2024.01.04","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0.000034},{"date":"2024.01.18","prevalence":0.000034,"sites":5,"fingerprinting":1,"cookies":0.00000681},{"date":"2024.01.31","prevalence":0.000034,"sites":5,"fingerprinting":1,"cookies":0.00000681},{"date":"2024.02.09","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.0000204},{"date":"ci-2024-02-17-epcmu","prevalence":0.0000749,"sites":11,"fingerprinting":2,"cookies":0.0000272}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;9398<small>/24121</small>
+                    <strong>Rank:</strong> &#35;5966<small>/24287</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (5 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (11 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -92,6 +92,7 @@
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
                     <span>Script</span>,
+                    <span>Stylesheet</span>,
                     <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/elements.video.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
@@ -100,6 +101,9 @@
                     <span>capi</span>, 
                     <span>cd</span>, 
                     <span>cds</span>, 
+                    <span>ins</span>, 
+                    <span>pl</span>, 
+                    <span>cks</span>, 
                 </li>
             </ul>
         </div>
@@ -130,6 +134,8 @@
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>Date.prototype.getTimezoneOffset</li>
         <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Date.prototype.getTime</li>
@@ -142,13 +148,13 @@
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p><a href="./doubleclick.net.html">doubleclick.net</a> - 40.00% of loads</p>
+            <p>loaded directly - 91.28% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./connatix.com.html">connatix.com</a> - 35.00% of loads</p>
+            <p><a href="./webcontentassessor.com.html">webcontentassessor.com</a> - 6.67% of loads</p>
         </li>
         <li class='truncate'>
-            <p>loaded directly - 25.00% of loads</p>
+            <p><a href="./doubleclick.net.html">doubleclick.net</a> - 2.05% of loads</p>
         </li>
     </ul>
 </div>
@@ -157,28 +163,208 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://capi.elements.video&#x2F;tr&#x2F;si" target="_blank" class="external" rel="noreferrer noopener">capi.elements.video&#x2F;tr&#x2F;si</a> (seen on 5 websites)</p>
+            <p><a href="http://capi.elements.video&#x2F;tr&#x2F;si" target="_blank" class="external" rel="noreferrer noopener">capi.elements.video&#x2F;tr&#x2F;si</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cd.elements.video&#x2F;player.js" target="_blank" class="external" rel="noreferrer noopener">cd.elements.video&#x2F;player.js</a> (seen on 4 websites)</p>
+            <p><a href="http://capi.elements.video&#x2F;core&#x2F;sync" target="_blank" class="external" rel="noreferrer noopener">capi.elements.video&#x2F;core&#x2F;sync</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cds.elements.video&#x2F;a&#x2F;hls.1.3.4.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;a&#x2F;hls.1.3.4.js</a> (seen on 4 websites)</p>
+            <p><a href="http://cd.elements.video&#x2F;player.js" target="_blank" class="external" rel="noreferrer noopener">cd.elements.video&#x2F;player.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cds.elements.video&#x2F;p&#x2F;409666&#x2F;player.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;409666&#x2F;player.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cds.elements.video&#x2F;a&#x2F;hls.1.3.5.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;a&#x2F;hls.1.3.5.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cds.elements.video&#x2F;p&#x2F;409666&#x2F;cSyncRemoteEntry.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;409666&#x2F;cSyncRemoteEntry.js</a> (seen on 2 websites)</p>
+            <p><a href="http://capi.elements.video&#x2F;core&#x2F;pls" target="_blank" class="external" rel="noreferrer noopener">capi.elements.video&#x2F;core&#x2F;pls</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cds.elements.video&#x2F;p&#x2F;409666&#x2F;952.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;409666&#x2F;952.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cds.elements.video&#x2F;a&#x2F;iframe.integration.destroy.1.0.0.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;a&#x2F;iframe.integration.destroy.1.0.0.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cds.elements.video&#x2F;p&#x2F;409666&#x2F;402.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;409666&#x2F;402.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;plugins&#x2F;connatix.omsdk.service-web-1.4.9.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;plugins&#x2F;connatix.omsdk.service-web-1.4.9.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://capi.elements.video&#x2F;core&#x2F;sync" target="_blank" class="external" rel="noreferrer noopener">capi.elements.video&#x2F;core&#x2F;sync</a> (seen on 2 websites)</p>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;plugins&#x2F;connatix.omsdk.session.client-1.4.9.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;plugins&#x2F;connatix.omsdk.session.client-1.4.9.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;plugins&#x2F;connatix.intentiq.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;plugins&#x2F;connatix.intentiq.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;429921&#x2F;player.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;429921&#x2F;player.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;429921&#x2F;cSyncRemoteEntry.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;429921&#x2F;cSyncRemoteEntry.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;429921&#x2F;player.css" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;429921&#x2F;player.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;429921&#x2F;236.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;429921&#x2F;236.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;429921&#x2F;948.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;429921&#x2F;948.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;60764267-557e-410f-85cb-f102d92ee134&#x2F;2&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;60764267-557e-410f-85cb-f102d92ee134&#x2F;2&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;429921&#x2F;floating.d9de0c19d4236e2be139.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;429921&#x2F;floating.d9de0c19d4236e2be139.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;430337&#x2F;player.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;430337&#x2F;player.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;430337&#x2F;cSyncRemoteEntry.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;430337&#x2F;cSyncRemoteEntry.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;430337&#x2F;player.css" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;430337&#x2F;player.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;430337&#x2F;236.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;430337&#x2F;236.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cds.elements.video&#x2F;p&#x2F;430337&#x2F;948.js" target="_blank" class="external" rel="noreferrer noopener">cds.elements.video&#x2F;p&#x2F;430337&#x2F;948.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://capi.elements.video&#x2F;tr&#x2F;sr" target="_blank" class="external" rel="noreferrer noopener">capi.elements.video&#x2F;tr&#x2F;sr</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pl.elements.video&#x2F;" target="_blank" class="external" rel="noreferrer noopener">pl.elements.video&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;44f626a0-cc4d-4994-8f7c-b00eceee3f2e&#x2F;6&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;44f626a0-cc4d-4994-8f7c-b00eceee3f2e&#x2F;6&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;f4bea2db-2937-4928-ad08-6863e258dd4d&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;f4bea2db-2937-4928-ad08-6863e258dd4d&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;d25a3316-39f5-42fe-a7dd-99edb3f0c51d&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;d25a3316-39f5-42fe-a7dd-99edb3f0c51d&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;b0625308-6edc-4c35-8010-8bb55290d2b0&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;b0625308-6edc-4c35-8010-8bb55290d2b0&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;de1c62a4-d75f-4a98-bbbd-94ba5eae81b3&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;de1c62a4-d75f-4a98-bbbd-94ba5eae81b3&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;b4bff619-249e-44ed-a3a9-e244df12b412&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;b4bff619-249e-44ed-a3a9-e244df12b412&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;de5d90f7-f47c-4e3b-bc28-ebbf61e3a75c&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;de5d90f7-f47c-4e3b-bc28-ebbf61e3a75c&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;ed24cf3c-9dd5-4c1e-a3c4-ac6f47aeb0de&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;ed24cf3c-9dd5-4c1e-a3c4-ac6f47aeb0de&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;4a241da1-4c3e-4cb7-907d-a49f21d6be37&#x2F;4&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;4a241da1-4c3e-4cb7-907d-a49f21d6be37&#x2F;4&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;2e95dbf1-a31a-47a8-8511-6cc417dd44be&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;2e95dbf1-a31a-47a8-8511-6cc417dd44be&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;6c938768-d252-4a06-9ce5-0ef8399b5ebc&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;6c938768-d252-4a06-9ce5-0ef8399b5ebc&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;aa819ac2-54f4-4db1-b7cb-b4e45e79741b&#x2F;7&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;aa819ac2-54f4-4db1-b7cb-b4e45e79741b&#x2F;7&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;7072286f-4b27-4ec9-8122-a916076c7eba&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;7072286f-4b27-4ec9-8122-a916076c7eba&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;5b43af36-58ca-49c4-a05c-1284190da03e&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;5b43af36-58ca-49c4-a05c-1284190da03e&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;9fa63d39-aa58-4fdf-b9a5-4e28431d93f9&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;9fa63d39-aa58-4fdf-b9a5-4e28431d93f9&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;cbea72b2-65f2-4292-868f-3cbe3801e438&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;cbea72b2-65f2-4292-868f-3cbe3801e438&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;b14b2d5e-acfd-4380-aba9-5f17c7dd1408&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;b14b2d5e-acfd-4380-aba9-5f17c7dd1408&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;00cd9e33-c45d-479b-9d43-57c183906b4c&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;00cd9e33-c45d-479b-9d43-57c183906b4c&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;99af0d8b-2ce5-4377-b846-a95bea415f67&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;99af0d8b-2ce5-4377-b846-a95bea415f67&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;3c3a0e91-2491-4479-9321-807801fdb83d&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;3c3a0e91-2491-4479-9321-807801fdb83d&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;44f851eb-0fc5-4b45-af2d-758e325468cb&#x2F;4&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;44f851eb-0fc5-4b45-af2d-758e325468cb&#x2F;4&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;394e6dbd-2139-48c2-afe5-c4359728e491&#x2F;4&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;394e6dbd-2139-48c2-afe5-c4359728e491&#x2F;4&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;84be2164-13cf-4baa-97d0-dd4911336027&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;84be2164-13cf-4baa-97d0-dd4911336027&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;14361bae-37fb-4b86-af6d-49d99d925b00&#x2F;4&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;14361bae-37fb-4b86-af6d-49d99d925b00&#x2F;4&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;ab1401df-310e-4242-98be-5e532bff4b9e&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;ab1401df-310e-4242-98be-5e532bff4b9e&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;7315f6bd-7c23-4cb1-9d6c-c6e00534f7ff&#x2F;4&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;7315f6bd-7c23-4cb1-9d6c-c6e00534f7ff&#x2F;4&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;609332d4-5704-4d54-9ea9-48ef187ad5f7&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;609332d4-5704-4d54-9ea9-48ef187ad5f7&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;dbcf063a-155b-446e-905d-04aff02443df&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;dbcf063a-155b-446e-905d-04aff02443df&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;e12dcf04-325b-4fb5-a2c4-8eb9134b2f55&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;e12dcf04-325b-4fb5-a2c4-8eb9134b2f55&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;395003ac-d87e-4846-9933-3a5f0a2a2531&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;395003ac-d87e-4846-9933-3a5f0a2a2531&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;445151f9-1c07-4f1e-a1e7-109b63ca5521&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;445151f9-1c07-4f1e-a1e7-109b63ca5521&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;301b2cd5-15fb-404e-b171-656f5fbfd475&#x2F;4&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;301b2cd5-15fb-404e-b171-656f5fbfd475&#x2F;4&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;db1b3243-cc5c-47d5-b37f-63c3723b9f67&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;db1b3243-cc5c-47d5-b37f-63c3723b9f67&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;b6f90f8d-188b-4b48-b0b0-9cf633d87814&#x2F;6&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;b6f90f8d-188b-4b48-b0b0-9cf633d87814&#x2F;6&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;40d6b002-ebb1-4adf-8d92-6dc4f87e3c0b&#x2F;8&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;40d6b002-ebb1-4adf-8d92-6dc4f87e3c0b&#x2F;8&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;2cf4ca15-7c6c-40f2-9615-b1458b2ab722&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;2cf4ca15-7c6c-40f2-9615-b1458b2ab722&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;d725e724-56cc-46cc-a176-f87f7d573a20&#x2F;5&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;d725e724-56cc-46cc-a176-f87f7d573a20&#x2F;5&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;0d0f197c-a6ac-4443-9bc4-47d219318c9f&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;0d0f197c-a6ac-4443-9bc4-47d219318c9f&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;83dd0f25-c68b-464f-9faa-b6a90fbc9e1a&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;83dd0f25-c68b-464f-9faa-b6a90fbc9e1a&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;d6dd63b8-e11c-4996-a0c2-2ccc15b49915&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;d6dd63b8-e11c-4996-a0c2-2ccc15b49915&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;d8331a81-1423-4403-ac91-4fd9767c8191&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;d8331a81-1423-4403-ac91-4fd9767c8191&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;420f89cf-7d24-4b89-97e8-0faf9a0e44a4&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;420f89cf-7d24-4b89-97e8-0faf9a0e44a4&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;433ada36-ceda-49cd-bcad-56798e30c764&#x2F;4&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;433ada36-ceda-49cd-bcad-56798e30c764&#x2F;4&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ins.elements.video&#x2F;fbb580f0-2933-45d9-adcb-76f8281309b9&#x2F;3&#x2F;insights.bin" target="_blank" class="external" rel="noreferrer noopener">ins.elements.video&#x2F;fbb580f0-2933-45d9-adcb-76f8281309b9&#x2F;3&#x2F;insights.bin</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cks.elements.video&#x2F;cks" target="_blank" class="external" rel="noreferrer noopener">cks.elements.video&#x2F;cks</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -188,22 +374,43 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://globo.com" target="_blank" class="external">globo.com</a>
+            <a href="http://fandom.com" target="_blank" class="external">fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://deusex.fandom.com" target="_blank" class="external">deusex.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://jurassicpark.fandom.com" target="_blank" class="external">jurassicpark.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://movies.fandom.com" target="_blank" class="external">movies.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sailormoon.fandom.com" target="_blank" class="external">sailormoon.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://snk.fandom.com" target="_blank" class="external">snk.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://unsolvedmysteries.fandom.com" target="_blank" class="external">unsolvedmysteries.fandom.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.crhoy.com" target="_blank" class="external">www.crhoy.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.laprensagrafica.com" target="_blank" class="external">www.laprensagrafica.com</a>
+            <a href="http://www.vanguardia.com" target="_blank" class="external">www.vanguardia.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.rollingstone.com" target="_blank" class="external">www.rollingstone.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.techtudo.com.br" target="_blank" class="external">www.techtudo.com.br</a>
+            <a href="http://www.washingtontimes.com" target="_blank" class="external">www.washingtontimes.com</a>
         </li>
         <li class='truncate'>
             <a href="http://crhoy.com" target="_blank" class="external">crhoy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vanguardia.com" target="_blank" class="external">vanguardia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://washingtontimes.com" target="_blank" class="external">washingtontimes.com</a>
         </li>
     </ul>
 </div>

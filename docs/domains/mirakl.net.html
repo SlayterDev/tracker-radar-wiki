@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "mirakl.net",
-        history: [{"date":"2023.04","prevalence":0.0000204,"sites":3,"fingerprinting":0,"cookies":0},{"date":"2023.05","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"2023.04","prevalence":0.0000204,"sites":3,"fingerprinting":0,"cookies":0},{"date":"2023.05","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2023.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.07","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.08","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.31","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.02.09","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0.00000681},{"date":"ci-2024-02-17-epcmu","prevalence":0.000034,"sites":5,"fingerprinting":1,"cookies":0.0000204}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;23453<small>/30115</small>
+                    <strong>Rank:</strong> &#35;9772<small>/24287</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (5 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,11 +90,15 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Script</span>,
+                    <span>Fetch</span>,
                     <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/mirakl.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>static.us1.target2sell</span>, 
+                    <span>t.us1.target2sell</span>, 
                     <span>ibs-prod</span>, 
                 </li>
             </ul>
@@ -114,13 +118,34 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+    </ul>
+</div>
 
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p>loaded directly - 100.00% of loads</p>
+            <p>loaded directly - 75.00% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./googletagmanager.com.html">googletagmanager.com</a> - 12.50% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./datadoghq-browser-agent.com.html">datadoghq-browser-agent.com</a> - 12.50% of loads</p>
         </li>
     </ul>
 </div>
@@ -129,25 +154,19 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2974" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2974</a> (seen on 2 websites)</p>
+            <p><a href="http://static.us1.target2sell.mirakl.net&#x2F;t2s.min.js" target="_blank" class="external" rel="noreferrer noopener">static.us1.target2sell.mirakl.net&#x2F;t2s.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2505" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2505</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2544" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2544</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2909" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2909</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;3063" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;3063</a> (seen on 2 websites)</p>
+            <p><a href="http://t.us1.target2sell.mirakl.net&#x2F;1.1&#x2F;json&#x2F;T&#x2F;t" target="_blank" class="external" rel="noreferrer noopener">t.us1.target2sell.mirakl.net&#x2F;1.1&#x2F;json&#x2F;T&#x2F;t</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2560" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2560</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;3010" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;3010</a> (seen on 2 websites)</p>
+            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2224" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;2224</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;3217" target="_blank" class="external" rel="noreferrer noopener">ibs-prod.mirakl.net&#x2F;mmp&#x2F;media&#x2F;shop-logo&#x2F;3217</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -156,6 +175,12 @@
     <h3 class='section-header'>Sites</h3>
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://shoppremiumoutlets.com" target="_blank" class="external">shoppremiumoutlets.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://us.christianlouboutin.com" target="_blank" class="external">us.christianlouboutin.com</a>
+        </li>
         <li class='truncate'>
             <a href="http://ibs.it" target="_blank" class="external">ibs.it</a>
         </li>

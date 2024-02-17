@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "audience.io",
-        history: [{"date":"2023.04","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0},{"date":"2023.05","prevalence":0.0000545,"sites":8,"fingerprinting":2,"cookies":0},{"date":"2023.06","prevalence":0.0000544,"sites":8,"fingerprinting":2,"cookies":0},{"date":"2023.07","prevalence":0.0000885,"sites":13,"fingerprinting":2,"cookies":0},{"date":"2023.08","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.09","prevalence":0.000136,"sites":20,"fingerprinting":1,"cookies":0.0000273},{"date":"2023.10","prevalence":0.000163,"sites":24,"fingerprinting":2,"cookies":0.0000341},{"date":"2023.11","prevalence":0.000225,"sites":33,"fingerprinting":1,"cookies":0.0000817},{"date":"2023.11.16","prevalence":0.000225,"sites":33,"fingerprinting":1,"cookies":0.0000817},{"date":"2023.12","prevalence":0.000177,"sites":26,"fingerprinting":1,"cookies":0.0000204},{"date":"2024.01.04","prevalence":0.000204,"sites":30,"fingerprinting":2,"cookies":0.0000408},{"date":"2024.01.18","prevalence":0.000218,"sites":32,"fingerprinting":1,"cookies":0.0000204},{"date":"ci-2024-01-26-mgjpe","prevalence":0.000218,"sites":32,"fingerprinting":1,"cookies":0.0000204}]
+        history: [{"date":"2023.04","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0},{"date":"2023.05","prevalence":0.0000545,"sites":8,"fingerprinting":2,"cookies":0},{"date":"2023.06","prevalence":0.0000544,"sites":8,"fingerprinting":2,"cookies":0},{"date":"2023.07","prevalence":0.0000885,"sites":13,"fingerprinting":2,"cookies":0},{"date":"2023.08","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.09","prevalence":0.000136,"sites":20,"fingerprinting":1,"cookies":0.0000273},{"date":"2023.10","prevalence":0.000163,"sites":24,"fingerprinting":2,"cookies":0.0000341},{"date":"2023.11","prevalence":0.000225,"sites":33,"fingerprinting":1,"cookies":0.0000817},{"date":"2023.11.16","prevalence":0.000225,"sites":33,"fingerprinting":1,"cookies":0.0000817},{"date":"2023.12","prevalence":0.000177,"sites":26,"fingerprinting":1,"cookies":0.0000204},{"date":"2024.01.04","prevalence":0.000204,"sites":30,"fingerprinting":2,"cookies":0.0000408},{"date":"2024.01.18","prevalence":0.000218,"sites":32,"fingerprinting":1,"cookies":0.0000204},{"date":"2024.01.31","prevalence":0.000218,"sites":32,"fingerprinting":1,"cookies":0.0000204},{"date":"2024.02.09","prevalence":0.000204,"sites":30,"fingerprinting":2,"cookies":0.000034},{"date":"ci-2024-02-17-epcmu","prevalence":0.000245,"sites":36,"fingerprinting":2,"cookies":0.0000613}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;3060<small>/24121</small>
+                    <strong>Rank:</strong> &#35;2888<small>/24287</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.02&#37; (32 sites)
+                    <strong>Prevalence:</strong> 0.02&#37; (36 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -92,7 +92,10 @@
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
                     <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Font</span>,
                     <span>XHR</span>,
+                    <span>Preflight</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/audience.io.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -128,10 +131,12 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
         <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -140,16 +145,19 @@
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p>loaded directly - 68.29% of loads</p>
+            <p>loaded directly - 56.00% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./googletagmanager.com.html">googletagmanager.com</a> - 14.63% of loads</p>
+            <p><a href="./aptivada.com.html">aptivada.com</a> - 12.00% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./script.ac.html">script.ac</a> - 12.20% of loads</p>
+            <p><a href="./script.ac.html">script.ac</a> - 12.00% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./aptivada.com.html">aptivada.com</a> - 4.88% of loads</p>
+            <p><a href="./googletagmanager.com.html">googletagmanager.com</a> - 12.00% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./adlightning.com.html">adlightning.com</a> - 8.00% of loads</p>
         </li>
     </ul>
 </div>
@@ -158,16 +166,43 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://xp.audience.io&#x2F;sdk.js" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;sdk.js</a> (seen on 13 websites)</p>
+            <p><a href="http://xp.audience.io&#x2F;sdk.js" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;sdk.js</a> (seen on 12 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v2.audience.io&#x2F;sdk" target="_blank" class="external" rel="noreferrer noopener">v2.audience.io&#x2F;sdk</a> (seen on 13 websites)</p>
+            <p><a href="http://v2.audience.io&#x2F;sdk" target="_blank" class="external" rel="noreferrer noopener">v2.audience.io&#x2F;sdk</a> (seen on 12 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://xp.audience.io&#x2F;widget.js" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;widget.js</a> (seen on 8 websites)</p>
+            <p><a href="http://xp.audience.io&#x2F;widget.js" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;widget.js</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v1.audience.io&#x2F;promo&#x2F;info.php" target="_blank" class="external" rel="noreferrer noopener">v1.audience.io&#x2F;promo&#x2F;info.php</a> (seen on 3 websites)</p>
+            <p><a href="http://v1.audience.io&#x2F;promo&#x2F;info.php" target="_blank" class="external" rel="noreferrer noopener">v1.audience.io&#x2F;promo&#x2F;info.php</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xp.audience.io&#x2F;assets&#x2F;fonts&#x2F;font-awesome-4.7.0&#x2F;css&#x2F;font-awesome.min.css" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;assets&#x2F;fonts&#x2F;font-awesome-4.7.0&#x2F;css&#x2F;font-awesome.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xp.audience.io&#x2F;poll&#x2F;poll.e6cfaffbeffc4e6f6214.js" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;poll&#x2F;poll.e6cfaffbeffc4e6f6214.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xp.audience.io&#x2F;assets&#x2F;fonts&#x2F;font-awesome-4.7.0&#x2F;fonts&#x2F;fontawesome-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;assets&#x2F;fonts&#x2F;font-awesome-4.7.0&#x2F;fonts&#x2F;fontawesome-webfont.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xp.audience.io&#x2F;20fd1704ea223900efa9.woff2" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;20fd1704ea223900efa9.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;497172" target="_blank" class="external" rel="noreferrer noopener">v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;497172</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;497172" target="_blank" class="external" rel="noreferrer noopener">v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;497172</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xp.audience.io&#x2F;poll&#x2F;1629096" target="_blank" class="external" rel="noreferrer noopener">xp.audience.io&#x2F;poll&#x2F;1629096</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;1629096" target="_blank" class="external" rel="noreferrer noopener">v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;1629096</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;1629096" target="_blank" class="external" rel="noreferrer noopener">v1.audience.io&#x2F;api&#x2F;v3&#x2F;app&#x2F;fetchPromo&#x2F;1629096</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -181,6 +216,9 @@
         </li>
         <li class='truncate'>
             <a href="http://660amtheanswer.com" target="_blank" class="external">660amtheanswer.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://710knus.com" target="_blank" class="external">710knus.com</a>
         </li>
         <li class='truncate'>
             <a href="http://am870theanswer.com" target="_blank" class="external">am870theanswer.com</a>
@@ -201,7 +239,13 @@
             <a href="http://www.sunjournal.com" target="_blank" class="external">www.sunjournal.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.thecentersquare.com" target="_blank" class="external">www.thecentersquare.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://clarksvillenow.com" target="_blank" class="external">clarksvillenow.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://crawfordcountynow.com" target="_blank" class="external">crawfordcountynow.com</a>
         </li>
         <li class='truncate'>
             <a href="http://freeskier.com" target="_blank" class="external">freeskier.com</a>
@@ -210,19 +254,13 @@
             <a href="http://iconev.com" target="_blank" class="external">iconev.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://kgmi.com" target="_blank" class="external">kgmi.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://kicdam.com" target="_blank" class="external">kicdam.com</a>
-        </li>
-        <li class='truncate'>
             <a href="http://metaxastalk.com" target="_blank" class="external">metaxastalk.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://ruralradio.com" target="_blank" class="external">ruralradio.com</a>
+            <a href="http://mybellinghamnow.com" target="_blank" class="external">mybellinghamnow.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://sallietomato.com" target="_blank" class="external">sallietomato.com</a>
+            <a href="http://ruralradio.com" target="_blank" class="external">ruralradio.com</a>
         </li>
         <li class='truncate'>
             <a href="http://wvmetronews.com" target="_blank" class="external">wvmetronews.com</a>
@@ -238,6 +276,12 @@
         </li>
         <li class='truncate'>
             <a href="http://www.toddstarnes.com" target="_blank" class="external">www.toddstarnes.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ccmmagazine.com" target="_blank" class="external">ccmmagazine.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thecentersquare.com" target="_blank" class="external">thecentersquare.com</a>
         </li>
     </ul>
 </div>
