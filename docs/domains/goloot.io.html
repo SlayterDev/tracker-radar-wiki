@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "goloot.io",
-        history: [{"date":"2023.03","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2023.04","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2023.05","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2023.06","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0},{"date":"2023.07","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0},{"date":"2023.08","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.31","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.02.09","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0},{"date":"2024.02.19","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0},{"date":"ci-2024-03-03-yuxzi","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0}]
+        history: [{"date":"2023.03","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2023.04","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2023.05","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2023.06","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0},{"date":"2023.07","prevalence":0.0000408,"sites":6,"fingerprinting":2,"cookies":0},{"date":"2023.08","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.31","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.02.09","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0},{"date":"2024.02.19","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0},{"date":"ci-2024-03-17-fhmjo","prevalence":0.000034,"sites":5,"fingerprinting":2,"cookies":0.0000204}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;22909<small>/24213</small>
+                    <strong>Rank:</strong> &#35;9507<small>/24169</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (1 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (5 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -90,13 +90,22 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Preflight</span>,
                     <span>XHR</span>,
+                    <span>Script</span>,
+                    <span>Document</span>,
+                    <span>Image</span>,
+                    <span>Stylesheet</span>,
+                    <span>Preflight</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/goloot.io.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>sdk</span>, 
+                    <span>rewards</span>, 
+                    <span>integration</span>, 
+                    <span>cdn</span>, 
+                    <span>events</span>, 
                 </li>
             </ul>
         </div>
@@ -115,19 +124,39 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p><a href="./goloot-web-sdk-production.web.app.html">goloot-web-sdk-production.web.app</a> - 60.00% of loads</p>
+            <p><a href="./doubleclick.net.html">doubleclick.net</a> - 54.55% of loads</p>
         </li>
         <li class='truncate'>
-            <p>loaded directly - 20.00% of loads</p>
+            <p><a href="./goloot-web-sdk-production.web.app.html">goloot-web-sdk-production.web.app</a> - 27.27% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./goloot.io.html">goloot.io</a> - 20.00% of loads</p>
+            <p>loaded directly - 9.09% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./goloot.io.html">goloot.io</a> - 9.09% of loads</p>
         </li>
     </ul>
 </div>
@@ -136,10 +165,94 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://sdk.goloot.io&#x2F;events&#x2F;log" target="_blank" class="external" rel="noreferrer noopener">sdk.goloot.io&#x2F;events&#x2F;log</a> (seen on 2 websites)</p>
+            <p><a href="http://rewards.goloot.io&#x2F;gl-formats.js" target="_blank" class="external" rel="noreferrer noopener">rewards.goloot.io&#x2F;gl-formats.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-f4b67c253feb8bcd.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-f4b67c253feb8bcd.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2Fa3ca9254-f414-4f22-9a33-bafbba0c8a23%2Fmedias%2F3bc74576-75fb-4144-aded-ed38ce94a4c7%2Fimages%2Ff6438ba6801a1cf575088a19a73242d96a2d6947ce61301ede0f94171ea591e3.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2Fa3ca9254-f414-4f22-9a33-bafbba0c8a23%2Fmedias%2F3bc74576-75fb-4144-aded-ed38ce94a4c7%2Fimages%2Ff6438ba6801a1cf575088a19a73242d96a2d6947ce61301ede0f94171ea591e3.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2Fa3ca9254-f414-4f22-9a33-bafbba0c8a23%2Fmedias%2F3bc74576-75fb-4144-aded-ed38ce94a4c7%2Flogos%2F9f775f4d043191a74a05378196e88a6550fe4077fc5573bb8d6bbeb8e72d3697.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2Fa3ca9254-f414-4f22-9a33-bafbba0c8a23%2Fmedias%2F3bc74576-75fb-4144-aded-ed38ce94a4c7%2Flogos%2F9f775f4d043191a74a05378196e88a6550fe4077fc5573bb8d6bbeb8e72d3697.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2F346ff91c-01fc-4d9a-886b-86c8bc7c12e4%2Fmedias%2Fc1d27705-f4c2-45bf-81c4-b598a7b1405d%2Flogos%2Fa49cafd5a436dd31b242a1f791e991e1377ce080c3fe98dc1bfab86a721380c6.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2F346ff91c-01fc-4d9a-886b-86c8bc7c12e4%2Fmedias%2Fc1d27705-f4c2-45bf-81c4-b598a7b1405d%2Flogos%2Fa49cafd5a436dd31b242a1f791e991e1377ce080c3fe98dc1bfab86a721380c6.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;css&#x2F;87f3c5d2b45beb51.css" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;css&#x2F;87f3c5d2b45beb51.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;fd9d1056-75a40433a121d8d9.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;fd9d1056-75a40433a121d8d9.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;69-cadacd8f48b779c4.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;69-cadacd8f48b779c4.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-app-211c41536461e7b5.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-app-211c41536461e7b5.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;app&#x2F;error-bdc0648cb108fe78.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;app&#x2F;error-bdc0648cb108fe78.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;166-6b9cf3f4e7f2c957.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;166-6b9cf3f4e7f2c957.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;app&#x2F;integrations&#x2F;%5BintegrationId%5D&#x2F;page-a68fb5c50236ce15.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;app&#x2F;integrations&#x2F;%5BintegrationId%5D&#x2F;page-a68fb5c50236ce15.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://events.goloot.io&#x2F;log" target="_blank" class="external" rel="noreferrer noopener">events.goloot.io&#x2F;log</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://events.goloot.io&#x2F;log" target="_blank" class="external" rel="noreferrer noopener">events.goloot.io&#x2F;log</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://sdk.goloot.io&#x2F;events&#x2F;log" target="_blank" class="external" rel="noreferrer noopener">sdk.goloot.io&#x2F;events&#x2F;log</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;integrations&#x2F;8f78bc99-b994-4dbb-93fa-354a1b3d990a" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;integrations&#x2F;8f78bc99-b994-4dbb-93fa-354a1b3d990a</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;applications%2Fc7b2de59-5186-449c-ab0d-35b28fbeda84%2Flogos%2FMTL-Blog-Logo-Final.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;applications%2Fc7b2de59-5186-449c-ab0d-35b28fbeda84%2Flogos%2FMTL-Blog-Logo-Final.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2F346ff91c-01fc-4d9a-886b-86c8bc7c12e4%2Fmedias%2Fc1d27705-f4c2-45bf-81c4-b598a7b1405d%2Fimages%2Fe2950ebb3a1e066a7072c9968db45ca9bc496ecd75573063726370dca3993679.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2F346ff91c-01fc-4d9a-886b-86c8bc7c12e4%2Fmedias%2Fc1d27705-f4c2-45bf-81c4-b598a7b1405d%2Fimages%2Fe2950ebb3a1e066a7072c9968db45ca9bc496ecd75573063726370dca3993679.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;62.3335d3d75d0421f4.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;62.3335d3d75d0421f4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;462.a4b51e4fe4994ba9.js" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;462.a4b51e4fe4994ba9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;integrations&#x2F;8f78bc99-b994-4dbb-93fa-354a1b3d990a&#x2F;rewards&#x2F;a3ca9254-f414-4f22-9a33-bafbba0c8a23&#x2F;claim" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;integrations&#x2F;8f78bc99-b994-4dbb-93fa-354a1b3d990a&#x2F;rewards&#x2F;a3ca9254-f414-4f22-9a33-bafbba0c8a23&#x2F;claim</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2F494a9db4-494c-4e4c-ada2-17f7ea576309%2Fmedias%2F8461a9d1-2113-447f-80cb-efe0420809f3%2Flogos%2F060ac757a176a72e07d5a883078b48adb2bf09d651f9c70b3c5d4609c00cfd70.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2F494a9db4-494c-4e4c-ada2-17f7ea576309%2Fmedias%2F8461a9d1-2113-447f-80cb-efe0420809f3%2Flogos%2F060ac757a176a72e07d5a883078b48adb2bf09d651f9c70b3c5d4609c00cfd70.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2Fd5d30f48-21d0-4efe-8e3d-5e868b5d712e%2Fmedias%2Fbf8ab9f4-6618-4830-91c0-a28ba1e32b2f%2Fimages%2F601e5dbbb08d1ffaf4e826e63ea7ffe6662f452569d91a247f1a4e52bce8fc92.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2Fd5d30f48-21d0-4efe-8e3d-5e868b5d712e%2Fmedias%2Fbf8ab9f4-6618-4830-91c0-a28ba1e32b2f%2Fimages%2F601e5dbbb08d1ffaf4e826e63ea7ffe6662f452569d91a247f1a4e52bce8fc92.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2Fd5d30f48-21d0-4efe-8e3d-5e868b5d712e%2Fmedias%2Fbf8ab9f4-6618-4830-91c0-a28ba1e32b2f%2Flogos%2Fca5022b1c7de0a41ddab1d88b3ce78c55854adb80745cdaa8f114cba7e9f6711.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2Fd5d30f48-21d0-4efe-8e3d-5e868b5d712e%2Fmedias%2Fbf8ab9f4-6618-4830-91c0-a28ba1e32b2f%2Flogos%2Fca5022b1c7de0a41ddab1d88b3ce78c55854adb80745cdaa8f114cba7e9f6711.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;integrations&#x2F;0f546eb9-45ac-45cf-9c21-a4f49ac97425" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;integrations&#x2F;0f546eb9-45ac-45cf-9c21-a4f49ac97425</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;applications%2F24be7062-46ec-42e4-a7c7-e0bd5a760029%2Flogos%2Fnarcity-ca-colour_2x.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;applications%2F24be7062-46ec-42e4-a7c7-e0bd5a760029%2Flogos%2Fnarcity-ca-colour_2x.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2F6a063909-600b-44c5-94d7-5bf9a0b57276%2Fmedias%2F03002bac-d7fd-420a-b26f-5b2edff2b7e9%2Fimages%2F22e3bab8e3dfed361e613cb848ba92b4f5c25abbe81b620366d03b2c48eb11be.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2F6a063909-600b-44c5-94d7-5bf9a0b57276%2Fmedias%2F03002bac-d7fd-420a-b26f-5b2edff2b7e9%2Fimages%2F22e3bab8e3dfed361e613cb848ba92b4f5c25abbe81b620366d03b2c48eb11be.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2F6a063909-600b-44c5-94d7-5bf9a0b57276%2Fmedias%2F03002bac-d7fd-420a-b26f-5b2edff2b7e9%2Flogos%2F66807488be6e6e423a17ffbf5fb3473c1e4d079e996cc6c6b1d1ff1f8ff509ed.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2F6a063909-600b-44c5-94d7-5bf9a0b57276%2Fmedias%2F03002bac-d7fd-420a-b26f-5b2edff2b7e9%2Flogos%2F66807488be6e6e423a17ffbf5fb3473c1e4d079e996cc6c6b1d1ff1f8ff509ed.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://integration.goloot.io&#x2F;integrations&#x2F;0f546eb9-45ac-45cf-9c21-a4f49ac97425&#x2F;rewards&#x2F;6a063909-600b-44c5-94d7-5bf9a0b57276&#x2F;claim" target="_blank" class="external" rel="noreferrer noopener">integration.goloot.io&#x2F;integrations&#x2F;0f546eb9-45ac-45cf-9c21-a4f49ac97425&#x2F;rewards&#x2F;6a063909-600b-44c5-94d7-5bf9a0b57276&#x2F;claim</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.goloot.io&#x2F;public_reward%2F4ad3299e-70b1-4b01-a50a-0934bd8850ba%2Fmedias%2Fb72cb82c-051d-49de-bc97-e7734bf41a68%2Flogos%2Fd149247b5f95718e658de29ca857482302a5ecb710a8290d53a4a40b6efe1bbd.png" target="_blank" class="external" rel="noreferrer noopener">cdn.goloot.io&#x2F;public_reward%2F4ad3299e-70b1-4b01-a50a-0934bd8850ba%2Fmedias%2Fb72cb82c-051d-49de-bc97-e7734bf41a68%2Flogos%2Fd149247b5f95718e658de29ca857482302a5ecb710a8290d53a4a40b6efe1bbd.png</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -153,6 +266,18 @@
         </li>
         <li class='truncate'>
             <a href="http://www.longmontleader.com" target="_blank" class="external">www.longmontleader.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mtlblog.com" target="_blank" class="external">mtlblog.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mtlblog.com" target="_blank" class="external">www.mtlblog.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.narcity.com" target="_blank" class="external">www.narcity.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://narcity.com" target="_blank" class="external">narcity.com</a>
         </li>
     </ul>
 </div>

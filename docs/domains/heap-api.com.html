@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "heap-api.com",
-        history: [{"date":"2023.08","prevalence":0.0000406,"sites":6,"fingerprinting":0,"cookies":0},{"date":"2023.09","prevalence":0.0000341,"sites":5,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0.0000612,"sites":9,"fingerprinting":1,"cookies":0.0000136},{"date":"2024.01.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0.0000545,"sites":8,"fingerprinting":1,"cookies":0.0000272},{"date":"2024.01.31","prevalence":0.0000545,"sites":8,"fingerprinting":1,"cookies":0.0000272},{"date":"2024.02.09","prevalence":0.0000681,"sites":10,"fingerprinting":1,"cookies":0.0000272},{"date":"2024.02.19","prevalence":0.0000681,"sites":10,"fingerprinting":1,"cookies":0.0000272},{"date":"ci-2024-03-03-yuxzi","prevalence":0.0000681,"sites":10,"fingerprinting":1,"cookies":0.0000272}]
+        history: [{"date":"2023.08","prevalence":0.0000406,"sites":6,"fingerprinting":0,"cookies":0},{"date":"2023.09","prevalence":0.0000341,"sites":5,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0.0000612,"sites":9,"fingerprinting":1,"cookies":0.0000136},{"date":"2024.01.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.18","prevalence":0.0000545,"sites":8,"fingerprinting":1,"cookies":0.0000272},{"date":"2024.01.31","prevalence":0.0000545,"sites":8,"fingerprinting":1,"cookies":0.0000272},{"date":"2024.02.09","prevalence":0.0000681,"sites":10,"fingerprinting":1,"cookies":0.0000272},{"date":"2024.02.19","prevalence":0.0000681,"sites":10,"fingerprinting":1,"cookies":0.0000272},{"date":"ci-2024-03-17-fhmjo","prevalence":0.0000681,"sites":10,"fingerprinting":2,"cookies":0.0000408}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6280<small>/24213</small>
+                    <strong>Rank:</strong> &#35;6262<small>/24169</small>
                 </li>
                 <li class='py-1'>
                     <strong>Prevalence:</strong> 0.01&#37; (10 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -97,9 +97,9 @@
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/heap-api.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>sdk.us</span>, 
                     <span>cdn.us</span>, 
                     <span>c.us</span>, 
-                    <span>sdk.us</span>, 
                 </li>
             </ul>
         </div>
@@ -130,6 +130,7 @@
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>NavigatorUAData.prototype.getHighEntropyValues</li>
@@ -144,10 +145,10 @@
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p>loaded directly - 96.43% of loads</p>
+            <p>loaded directly - 96.88% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./googletagmanager.com.html">googletagmanager.com</a> - 3.57% of loads</p>
+            <p><a href="./googletagmanager.com.html">googletagmanager.com</a> - 3.13% of loads</p>
         </li>
     </ul>
 </div>
@@ -156,19 +157,22 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://cdn.us.heap-api.com&#x2F;v5&#x2F;heapjs-static&#x2F;1.0.0-beta.8&#x2F;core&#x2F;heap.js" target="_blank" class="external" rel="noreferrer noopener">cdn.us.heap-api.com&#x2F;v5&#x2F;heapjs-static&#x2F;1.0.0-beta.8&#x2F;core&#x2F;heap.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cdn.us.heap-api.com&#x2F;v5&#x2F;heapjs-static&#x2F;1.0.0-beta.9&#x2F;core&#x2F;heap.js" target="_blank" class="external" rel="noreferrer noopener">cdn.us.heap-api.com&#x2F;v5&#x2F;heapjs-static&#x2F;1.0.0-beta.9&#x2F;core&#x2F;heap.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties</a> (seen on 2 websites)</p>
+            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track</a> (seen on 2 websites)</p>
+            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties</a> (seen on 2 websites)</p>
+            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;add_user_properties</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track</a> (seen on 2 websites)</p>
+            <p><a href="http://c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track" target="_blank" class="external" rel="noreferrer noopener">c.us.heap-api.com&#x2F;api&#x2F;capture&#x2F;v2&#x2F;track</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdk.us.heap-api.com&#x2F;config&#x2F;3510146721&#x2F;heap_config.js" target="_blank" class="external" rel="noreferrer noopener">sdk.us.heap-api.com&#x2F;config&#x2F;3510146721&#x2F;heap_config.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://sdk.us.heap-api.com&#x2F;js&#x2F;heap.js" target="_blank" class="external" rel="noreferrer noopener">sdk.us.heap-api.com&#x2F;js&#x2F;heap.js</a> (seen on 2 websites)</p>
@@ -181,10 +185,13 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://decked.com" target="_blank" class="external">decked.com</a>
+            <a href="http://toasttab.com" target="_blank" class="external">toasttab.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://thursdayboots.com" target="_blank" class="external">thursdayboots.com</a>
+            <a href="http://central.toasttab.com" target="_blank" class="external">central.toasttab.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://decked.com" target="_blank" class="external">decked.com</a>
         </li>
         <li class='truncate'>
             <a href="http://numberfire.com" target="_blank" class="external">numberfire.com</a>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "gdol.com",
-        history: [{"date":"2023.06","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.00000681},{"date":"2023.07","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0},{"date":"2023.08","prevalence":0.0000135,"sites":2,"fingerprinting":3,"cookies":0},{"date":"2023.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0.0000068,"sites":1,"fingerprinting":3,"cookies":0.0000068},{"date":"2024.01.18","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"2024.01.31","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"2024.02.09","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"2024.02.19","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"ci-2024-03-03-yuxzi","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681}]
+        history: [{"date":"2023.06","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.00000681},{"date":"2023.07","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0},{"date":"2023.08","prevalence":0.0000135,"sites":2,"fingerprinting":3,"cookies":0},{"date":"2023.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.11.16","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2023.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2024.01.04","prevalence":0.0000068,"sites":1,"fingerprinting":3,"cookies":0.0000068},{"date":"2024.01.18","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"2024.01.31","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"2024.02.09","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"2024.02.19","prevalence":0.00000681,"sites":1,"fingerprinting":3,"cookies":0.00000681},{"date":"ci-2024-03-17-fhmjo","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;22866<small>/24213</small>
+                    <strong>Rank:</strong> &#35;18174<small>/24169</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (1 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
@@ -90,12 +90,15 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
                     <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/gdol.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>res</span>, 
+                    <span>cdn</span>, 
                 </li>
             </ul>
         </div>
@@ -114,6 +117,27 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+    </ul>
+</div>
 
 
 <div class='p-5 border-b'>
@@ -132,7 +156,73 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://res.gdol.com&#x2F;ap&#x2F;p.php" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;ap&#x2F;p.php</a> (seen on 2 websites)</p>
+            <p><a href="http://res.gdol.com&#x2F;ap&#x2F;p.php" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;ap&#x2F;p.php</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;wgn-state.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;wgn-state.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;libs&#x2F;modernizr-2.0.6.js" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;libs&#x2F;modernizr-2.0.6.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.gdol.com&#x2F;images&#x2F;icon-adchoices.png" target="_blank" class="external" rel="noreferrer noopener">cdn.gdol.com&#x2F;images&#x2F;icon-adchoices.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;plugins.js" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;plugins.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;script.js" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;script.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;fp-state-site-script.js" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;js&#x2F;fp-state-site-script.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.normalize.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.normalize.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq-lightbox.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq-lightbox.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq-tablesorter.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq-tablesorter.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq.ui-stars.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq.ui-stars.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq.ui-theme.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;jq.ui-theme.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;wgn-all.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;wgn-all.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.media.queries.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.media.queries.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.non-semantic.helper.classes.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.non-semantic.helper.classes.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.print.styles.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;h5bp.print.styles.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;ipad.css" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;ipad.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;global-img&#x2F;_sprite&#x2F;sprite-v5.png" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;global-img&#x2F;_sprite&#x2F;sprite-v5.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;global-img&#x2F;_sprite&#x2F;front-promo-subscribe-v2.png" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;global-img&#x2F;_sprite&#x2F;front-promo-subscribe-v2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;global-img&#x2F;_misc&#x2F;ms-bg.png" target="_blank" class="external" rel="noreferrer noopener">res.gdol.com&#x2F;pubs3&#x2F;skins&#x2F;gav&#x2F;css&#x2F;global-img&#x2F;_misc&#x2F;ms-bg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.gdol.com&#x2F;images&#x2F;maps&#x2F;markers&#x2F;golf_club_green_2_48.png" target="_blank" class="external" rel="noreferrer noopener">cdn.gdol.com&#x2F;images&#x2F;maps&#x2F;markers&#x2F;golf_club_green_2_48.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.gdol.com&#x2F;images&#x2F;maps&#x2F;markers&#x2F;red-dot-medium.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.gdol.com&#x2F;images&#x2F;maps&#x2F;markers&#x2F;red-dot-medium.jpg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -143,6 +233,9 @@
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
             <a href="http://floridagolf.com" target="_blank" class="external">floridagolf.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.golftexas.com" target="_blank" class="external">www.golftexas.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.floridagolf.com" target="_blank" class="external">www.floridagolf.com</a>

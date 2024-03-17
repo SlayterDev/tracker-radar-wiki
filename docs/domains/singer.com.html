@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - singer.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "singer.com",
+        history: [{"date":"ci-2024-03-17-fhmjo","prevalence":0.0000272,"sites":4,"fingerprinting":3,"cookies":0.0000272}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/singer.com.ico' width="32" height="32" class='inline-block' /> singer.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <a href="../entities/SVP Worldwide.html">SVP Worldwide</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;11602<small>/24169</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Image</span>,
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>Ping</span>,
+                    <span>Other</span>,
+                    <span>Fetch</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/singer.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>www</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.screenY</li>
+        <li class='truncate'>window.screenX</li>
+        <li class='truncate'>window.outerHeight</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>window.name</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Top Initiators</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <p><a href="./rebuyengine.com.html">rebuyengine.com</a> - 40.74% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./shopify.com.html">shopify.com</a> - 29.63% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./klaviyo.com.html">klaviyo.com</a> - 14.81% of loads</p>
+        </li>
+        <li class='truncate'>
+            <p><a href="./singer.com.html">singer.com</a> - 14.81% of loads</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Logo.svg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Logo.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;singer.svg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;singer.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;theme-7f6ed2ab.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;theme-7f6ed2ab.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;constants.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;constants.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;pubsub.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;pubsub.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;global.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;global.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;checkouts&#x2F;internal&#x2F;preloads.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;checkouts&#x2F;internal&#x2F;preloads.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;storefront&#x2F;load_feature-9f951eb7d8d53973c719de211f807d63af81c644e5b9a6ae72661ac408d472f6.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;storefront&#x2F;load_feature-9f951eb7d8d53973c719de211f807d63af81c644e5b9a6ae72661ac408d472f6.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;shopify_pay&#x2F;storefront-a2d444786d996da5634fbbaeeffe6104ee672440dfa6cdcaebfb27dceaaf9c0f.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;shopify_pay&#x2F;storefront-a2d444786d996da5634fbbaeeffe6104ee672440dfa6cdcaebfb27dceaaf9c0f.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;storefront&#x2F;features-1c0b396bd4d054b94abae1eb6a1bd6ba47beb35525c57a217c77a862ff06d83f.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;storefront&#x2F;features-1c0b396bd4d054b94abae1eb6a1bd6ba47beb35525c57a217c77a862ff06d83f.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;theme-e99af47c.css" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;theme-e99af47c.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;wpm&#x2F;b2667da08w18414680p859c456am35fb5349m.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;wpm&#x2F;b2667da08w18414680p859c456am35fb5349m.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;s&#x2F;trekkie.storefront.1270f147a1e990ec5a64b247ee8ac6f66f4f0bb2.min.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;s&#x2F;trekkie.storefront.1270f147a1e990ec5a64b247ee8ac6f66f4f0bb2.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;shop_events_listener-a7c63dba65ccddc484f77541dc8ca437e60e1e9e297fe1c3faebf6523a0ede9b.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;shopify&#x2F;assets&#x2F;shop_events_listener-a7c63dba65ccddc484f77541dc8ca437e60e1e9e297fe1c3faebf6523a0ede9b.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;boomerang&#x2F;shopify-boomerang-1.0.0.min.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;boomerang&#x2F;shopify-boomerang-1.0.0.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_12ecc2fa-4828-4e26-a74b-3fa4d9beaec1.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_12ecc2fa-4828-4e26-a74b-3fa4d9beaec1.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-Machines-ViewAll.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-Machines-ViewAll.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_2184fd1d-d292-48a5-b63a-61fca172a7b8.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_2184fd1d-d292-48a5-b63a-61fca172a7b8.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_75.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_75.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_76e83f2e-b215-499a-ab2f-4dc69cbfad09.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_76e83f2e-b215-499a-ab2f-4dc69cbfad09.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_472.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_472.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_79c263a9-87d5-4553-864a-d4534e91e822.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_79c263a9-87d5-4553-864a-d4534e91e822.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_472_772fa2cf-c2cc-4a82-9d64-d6245206e389.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_472_772fa2cf-c2cc-4a82-9d64-d6245206e389.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_f9086736-e258-4c47-962a-baecd973b584.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_f9086736-e258-4c47-962a-baecd973b584.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_95768424-dc64-4938-b599-eddd530584ea.png" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Rectangle_47_95768424-dc64-4938-b599-eddd530584ea.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;a&#x2F;elevar&#x2F;static&#x2F;configs&#x2F;9d9175afb151652979571051ca5566a92b3a4b2c&#x2F;config.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;a&#x2F;elevar&#x2F;static&#x2F;configs&#x2F;9d9175afb151652979571051ca5566a92b3a4b2c&#x2F;config.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;.well-known&#x2F;shopify&#x2F;monorail&#x2F;unstable&#x2F;produce_batch" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;.well-known&#x2F;shopify&#x2F;monorail&#x2F;unstable&#x2F;produce_batch</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-141918487@ca17ed62beac06dde4fca96d6ae2d5dc&#x2F;sandbox&#x2F;worker.modern.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-141918487@ca17ed62beac06dde4fca96d6ae2d5dc&#x2F;sandbox&#x2F;worker.modern.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-129761559@8740e94f95c348ba653bee9b9bf974f6&#x2F;sandbox&#x2F;worker.modern.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-129761559@8740e94f95c348ba653bee9b9bf974f6&#x2F;sandbox&#x2F;worker.modern.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-shopify-app-pixel@0575&#x2F;sandbox&#x2F;worker.modern.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-shopify-app-pixel@0575&#x2F;sandbox&#x2F;worker.modern.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;boost-sd-custom.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;boost-sd-custom.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;a&#x2F;elevar&#x2F;static&#x2F;getelevar&#x2F;3.14.4&#x2F;dl-app-embed-block.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;a&#x2F;elevar&#x2F;static&#x2F;getelevar&#x2F;3.14.4&#x2F;dl-app-embed-block.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;consent-tracking-api&#x2F;v0.1&#x2F;consent-tracking-api.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shopifycloud&#x2F;consent-tracking-api&#x2F;v0.1&#x2F;consent-tracking-api.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cart.json" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cart.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;boost-sd-custom.css" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;t&#x2F;20&#x2F;assets&#x2F;boost-sd-custom.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;a&#x2F;elevar" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;a&#x2F;elevar</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;.well-known&#x2F;shopify&#x2F;monorail&#x2F;v1&#x2F;produce" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;.well-known&#x2F;shopify&#x2F;monorail&#x2F;v1&#x2F;produce</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;a&#x2F;elevar&#x2F;static&#x2F;getelevar&#x2F;3.14.4&#x2F;dl-web-pixel-strict-app.js" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;a&#x2F;elevar&#x2F;static&#x2F;getelevar&#x2F;3.14.4&#x2F;dl-web-pixel-strict-app.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;SGR-24-0209-March_Web_BannerDesk_2160x1035-Lucky.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;SGR-24-0209-March_Web_BannerDesk_2160x1035-Lucky.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;SGR-24-0209-March_Web_BannerMobile_750x520-Lucky.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;SGR-24-0209-March_Web_BannerMobile_750x520-Lucky.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;3up-Singer-Momento.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;3up-Singer-Momento.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;3up-Singer-MomentoHeatPress.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;3up-Singer-MomentoHeatPress.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-SewingMachines.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-SewingMachines.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-OverlockSerger.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-OverlockSerger.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-HeavyDuty.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-HeavyDuty.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-AllMachines.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Cat-Singer-AllMachines.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-5050-HeavyDuty.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-5050-HeavyDuty.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-Needles_ef10254b-7a13-4b47-9d0b-3d7cf00d0298.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-Needles_ef10254b-7a13-4b47-9d0b-3d7cf00d0298.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-PresserFeet_0ed5598e-8f9e-4cf8-8d34-dbe6a41764ac.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-PresserFeet_0ed5598e-8f9e-4cf8-8d34-dbe6a41764ac.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-DressForms_213a46a5-3cd7-4480-84ab-457c2129679d.jpg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Singer-DressForms_213a46a5-3cd7-4480-84ab-457c2129679d.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-shopify-custom-pixel@0575&#x2F;sandbox&#x2F;modern&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;wpm@2667da08w18414680p859c456am35fb5349&#x2F;web-pixel-shopify-custom-pixel@0575&#x2F;sandbox&#x2F;modern&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;browsing_context_suggestions.json" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;browsing_context_suggestions.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Frame_3.svg" target="_blank" class="external" rel="noreferrer noopener">www.singer.com&#x2F;cdn&#x2F;shop&#x2F;files&#x2F;Frame_3.svg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://husqvarnaviking.com" target="_blank" class="external">husqvarnaviking.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pfaff.com" target="_blank" class="external">www.pfaff.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.husqvarnaviking.com" target="_blank" class="external">www.husqvarnaviking.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pfaff.com" target="_blank" class="external">pfaff.com</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

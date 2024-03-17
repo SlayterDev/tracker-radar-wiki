@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "drinkag1.com",
-        history: [{"date":"2023.07","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.08","prevalence":0.0000135,"sites":2,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.09","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.10","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.11","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.11.16","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.12","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2024.01.04","prevalence":0.0000204,"sites":3,"fingerprinting":2,"cookies":0.0000204},{"date":"2024.01.18","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2024.01.31","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2024.02.09","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0.00000681},{"date":"2024.02.19","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"ci-2024-03-03-yuxzi","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
+        history: [{"date":"2023.07","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.08","prevalence":0.0000135,"sites":2,"fingerprinting":2,"cookies":0.0000135},{"date":"2023.09","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.10","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2023.11","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.11.16","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.00000681},{"date":"2023.12","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2024.01.04","prevalence":0.0000204,"sites":3,"fingerprinting":2,"cookies":0.0000204},{"date":"2024.01.18","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2024.01.31","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"2024.02.09","prevalence":0.00000681,"sites":1,"fingerprinting":2,"cookies":0.00000681},{"date":"2024.02.19","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136},{"date":"ci-2024-03-17-fhmjo","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;17632<small>/24213</small>
+                    <strong>Rank:</strong> &#35;17537<small>/24169</small>
                 </li>
                 <li class='py-1'>
                     <strong>Prevalence:</strong> 0.00&#37; (2 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,10 +90,11 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Script</span>,
                     <span>Stylesheet</span>,
+                    <span>Script</span>,
                     <span>Fetch</span>,
                     <span>Font</span>,
+                    <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/drinkag1.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -126,11 +127,14 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Navigator.prototype.deviceMemory</li>
         <li class='truncate'>Navigator.prototype.onLine</li>
         <li class='truncate'>Navigator.prototype.connection</li>
         <li class='truncate'>Element.prototype.getClientRects</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
         <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>URL.createObjectURL</li>
@@ -148,13 +152,10 @@
     <h3 class='section-header'>Top Initiators</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <p>loaded directly - 57.14% of loads</p>
+            <p>loaded directly - 66.67% of loads</p>
         </li>
         <li class='truncate'>
-            <p><a href="./drinkag1.com.html">drinkag1.com</a> - 28.57% of loads</p>
-        </li>
-        <li class='truncate'>
-            <p><a href="./abtasty.com.html">abtasty.com</a> - 14.29% of loads</p>
+            <p><a href="./drinkag1.com.html">drinkag1.com</a> - 33.33% of loads</p>
         </li>
     </ul>
 </div>
@@ -163,10 +164,25 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;e3b15a5aaa1fae3d.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;e3b15a5aaa1fae3d.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-261ab572ab6e98d5.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-261ab572ab6e98d5.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-6fc72163892d05ec.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-6fc72163892d05ec.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-ad9e9d9b293b2d32.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-ad9e9d9b293b2d32.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-dc357bad51eba592.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-dc357bad51eba592.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;zCP8IYeN-mAE1fYvnKsWZ&#x2F;_buildManifest.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;zCP8IYeN-mAE1fYvnKsWZ&#x2F;_buildManifest.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;zCP8IYeN-mAE1fYvnKsWZ&#x2F;_ssgManifest.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;zCP8IYeN-mAE1fYvnKsWZ&#x2F;_ssgManifest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3245-7aa2072532f6caac.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3245-7aa2072532f6caac.js</a> (seen on 2 websites)</p>
@@ -193,31 +209,64 @@
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1625-48dc7406155f262b.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1625-48dc7406155f262b.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6713-3a088ee459d0f3cf.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6713-3a088ee459d0f3cf.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4006-035de1d7fa8223c3.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4006-035de1d7fa8223c3.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7612-e9799fecf22379d0.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7612-e9799fecf22379d0.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9118-6d6be164ffc3d400.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9118-6d6be164ffc3d400.js</a> (seen on 2 websites)</p>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1198.3690bd8067096f27.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1198.3690bd8067096f27.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1394-e5b95cb3c1a6f870.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1394-e5b95cb3c1a6f870.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3055-b7e72f793540b88a.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3055-b7e72f793540b88a.js</a> (seen on 2 websites)</p>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3055-8394d874d66542c2.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3055-8394d874d66542c2.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4885-9b3d7fdd2bc2b65e.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4885-9b3d7fdd2bc2b65e.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8472-9dcb684c3d2c43be.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8472-9dcb684c3d2c43be.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;89a3f9f77414f973.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;89a3f9f77414f973.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2321-4215cdb11113041f.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2321-4215cdb11113041f.js</a> (seen on 2 websites)</p>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2321-3e226a9e885e9dee.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2321-3e226a9e885e9dee.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8472-9dcb684c3d2c43be.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8472-9dcb684c3d2c43be.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5022-adf909783521c3e4.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5022-adf909783521c3e4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;cc4362ee41cdb3c2.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;cc4362ee41cdb3c2.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7784-f53ccf826e2a2e7d.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7784-f53ccf826e2a2e7d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3016-a546ff2d318aa685.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3016-a546ff2d318aa685.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;45a826a82312d287.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;45a826a82312d287.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3388-fb1c8d39b5a16dc1.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3388-fb1c8d39b5a16dc1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3169-41b402401ffcd8fb.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3169-41b402401ffcd8fb.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7c38e06a6caa7d40.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7c38e06a6caa7d40.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9390-3862abad74c828bd.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9390-3862abad74c828bd.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3523.0da6f14bbb321da8.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3523.0da6f14bbb321da8.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://drinkag1.com&#x2F;apis-edge&#x2F;location" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;apis-edge&#x2F;location</a> (seen on 2 websites)</p>
@@ -229,190 +278,7 @@
             <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;ABCDiatype-Bold.37580de1.woff2" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;ABCDiatype-Bold.37580de1.woff2</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;8803b7b10e00208e.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;8803b7b10e00208e.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;212d4f88b6b224ce.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;212d4f88b6b224ce.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;0ba6a0e827553daf.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;0ba6a0e827553daf.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7fd1348cd5c6d993.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7fd1348cd5c6d993.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;faf339af8fa5509d.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;faf339af8fa5509d.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7efae379e4d6659d.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7efae379e4d6659d.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7cf901c32be46e18.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7cf901c32be46e18.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;ca9c721527bff3e4.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;ca9c721527bff3e4.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;ebdd731ae8d3827c.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;ebdd731ae8d3827c.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;b4f54c7eba5429c1.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;b4f54c7eba5429c1.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;9c897f3179f3265a.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;9c897f3179f3265a.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;5286238891ce57a0.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;5286238891ce57a0.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;16afe5d54dfe57da.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;16afe5d54dfe57da.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;d6ce5ea10ca28324.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;d6ce5ea10ca28324.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;9bddcdc1d2419310.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;9bddcdc1d2419310.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;52137a1c78fdcc10.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;52137a1c78fdcc10.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;57329096db34bed7.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;57329096db34bed7.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;432ed0089d26de4d.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;432ed0089d26de4d.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;433fea010cfa7f7f.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;433fea010cfa7f7f.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;8bed28c07ae27314.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;8bed28c07ae27314.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;b68d87b0f4edee97.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;b68d87b0f4edee97.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5022-3f9683e875d09463.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5022-3f9683e875d09463.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7784-634f769b477947ea.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7784-634f769b477947ea.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;269.7a849aba32beefce.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;269.7a849aba32beefce.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2482.e27331de7a4d328f.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2482.e27331de7a4d328f.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1076.0f8351a87865f9f9.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1076.0f8351a87865f9f9.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3016-f8778725d0caeba3.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3016-f8778725d0caeba3.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3169-a6893aa8a2611a78.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3169-a6893aa8a2611a78.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3441-45e40d111e937df1.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3441-45e40d111e937df1.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6671.a430a0e8fefcefa3.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6671.a430a0e8fefcefa3.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6925-3be46bdeaab6e0ce.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6925-3be46bdeaab6e0ce.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9346-35f1ac2b966a82f6.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9346-35f1ac2b966a82f6.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4243.986fe265a1e65068.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4243.986fe265a1e65068.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1373.d0b8b0fb7f8840b7.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1373.d0b8b0fb7f8840b7.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5250.cad21338c9b29b13.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5250.cad21338c9b29b13.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;305.578d2af301e44c8a.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;305.578d2af301e44c8a.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;33.6a9d1278d8fbcb2e.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;33.6a9d1278d8fbcb2e.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7697.1abe7d5d622215b2.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;7697.1abe7d5d622215b2.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3328.cc0cdc491c632bcf.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3328.cc0cdc491c632bcf.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8448.30642c2cdbbfa0e2.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8448.30642c2cdbbfa0e2.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4764.23b319a75c4a2cac.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4764.23b319a75c4a2cac.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1541.ad9f226c786be5c8.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1541.ad9f226c786be5c8.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;177.a99c27c33df570c1.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;177.a99c27c33df570c1.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3709.3910d1ffa76061e6.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3709.3910d1ffa76061e6.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4230.24911f5297110390.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4230.24911f5297110390.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1227.ab072a1557098af2.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1227.ab072a1557098af2.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3388-0d2067ed2ee3183e.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3388-0d2067ed2ee3183e.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3067-b8471cae78d066e7.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3067-b8471cae78d066e7.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1889.60dc179d4477128c.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;1889.60dc179d4477128c.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-532ac15bd732c9d7.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-532ac15bd732c9d7.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-710a5fe11c184abf.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-710a5fe11c184abf.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;%5B%5B...slug%5D%5D-79d51258988d8288.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;%5B%5B...slug%5D%5D-79d51258988d8288.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;8-eH5e7oLJW0RFVlKIPuH&#x2F;_buildManifest.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;8-eH5e7oLJW0RFVlKIPuH&#x2F;_buildManifest.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;8-eH5e7oLJW0RFVlKIPuH&#x2F;_ssgManifest.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;8-eH5e7oLJW0RFVlKIPuH&#x2F;_ssgManifest.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;AGItems-Regular.456e9ec1.woff2" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;AGItems-Regular.456e9ec1.woff2</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;ABCDiatype-RegularItalic.053fed2c.woff2" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;ABCDiatype-RegularItalic.053fed2c.woff2</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;ABCDiatypeMono-Regular.21349e5a.woff2" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;media&#x2F;ABCDiatypeMono-Regular.21349e5a.woff2</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7937f9ae81848420.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;7937f9ae81848420.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4846.71fa3dcb25f54cb5.js" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;4846.71fa3dcb25f54cb5.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;89a3f9f77414f973.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;89a3f9f77414f973.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;212d4f88b6b224ce.css" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;static&#x2F;css&#x2F;212d4f88b6b224ce.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;data&#x2F;8-eH5e7oLJW0RFVlKIPuH&#x2F;en-us&#x2F;privacy.json" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;data&#x2F;8-eH5e7oLJW0RFVlKIPuH&#x2F;en-us&#x2F;privacy.json</a> (seen on 2 websites)</p>
+            <p><a href="http://drinkag1.com&#x2F;_next&#x2F;image" target="_blank" class="external" rel="noreferrer noopener">drinkag1.com&#x2F;_next&#x2F;image</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
